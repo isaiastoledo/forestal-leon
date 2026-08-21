@@ -1,0 +1,119 @@
+<!--
+  Plantilla del correo que llega al recibir un formulario.
+
+  Se pega en Fluent Forms › Ajustes del formulario › Notificaciones por correo,
+  en el campo «Cuerpo del mensaje», con el editor en modo código (</>).
+
+  Los {inputs.campo} los sustituye Fluent Forms con lo que escribió el visitante.
+  Ajusta los nombres si al crear el formulario les pones otras claves.
+
+  Va todo con estilos en línea y en tabla: los gestores de correo —Outlook el
+  primero— ignoran las hojas de estilo y buena parte de flexbox y grid.
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f1;margin:0;padding:24px 0;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border:1px solid #d4d0c8;max-width:600px;width:100%;">
+
+        <!-- Cabecera -->
+        <tr>
+          <td style="background-color:#01735a;padding:24px 32px;">
+            <p style="color:#ffffff;font-family:'Open Sans',Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:1px;margin:0;text-transform:uppercase;">
+              Forestal León
+            </p>
+            <p style="color:#c5d9c6;font-family:'Open Sans',Arial,sans-serif;font-size:13px;margin:4px 0 0;">
+              Nuevo mensaje desde la web
+            </p>
+          </td>
+        </tr>
+
+        <!-- Qué formulario -->
+        <tr>
+          <td style="border-bottom:1px solid #ececea;padding:20px 32px 12px;">
+            <p style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.2px;margin:0;text-transform:uppercase;">
+              Formulario
+            </p>
+            <p style="color:#1a1a17;font-family:'Open Sans',Arial,sans-serif;font-size:17px;margin:4px 0 0;">
+              {form.name}
+            </p>
+          </td>
+        </tr>
+
+        <!-- Los datos -->
+        <tr>
+          <td style="padding:8px 32px 24px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+
+              <tr>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;width:34%;">
+                  <span style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:13px;">Nombre</span>
+                </td>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#1a1a17;font-family:'Open Sans',Arial,sans-serif;font-size:15px;">{inputs.nombre}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:13px;">Correo</span>
+                </td>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <a href="mailto:{inputs.email}" style="color:#01735a;font-family:'Open Sans',Arial,sans-serif;font-size:15px;">{inputs.email}</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:13px;">Teléfono</span>
+                </td>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#1a1a17;font-family:'Open Sans',Arial,sans-serif;font-size:15px;">{inputs.telefono}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:13px;">Empresa</span>
+                </td>
+                <td style="border-bottom:1px solid #ececea;padding:14px 0;vertical-align:top;">
+                  <span style="color:#1a1a17;font-family:'Open Sans',Arial,sans-serif;font-size:15px;">{inputs.empresa}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:18px 0 0;vertical-align:top;" colspan="2">
+                  <span style="color:#6b6b64;font-family:'Open Sans',Arial,sans-serif;font-size:13px;">Mensaje</span>
+                  <p style="background-color:#faf9f6;border-left:3px solid #01735a;color:#1a1a17;font-family:'Open Sans',Arial,sans-serif;font-size:15px;line-height:1.7;margin:8px 0 0;padding:16px 18px;">
+                    {inputs.mensaje}
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+
+        <!-- Aviso de cómo responder -->
+        <tr>
+          <td style="background-color:#faf9f6;border-top:1px solid #ececea;padding:18px 32px;">
+            <p style="color:#3c3c38;font-family:'Open Sans',Arial,sans-serif;font-size:13px;line-height:1.6;margin:0;">
+              Pulsa <strong>Responder</strong> y el mensaje va directamente a
+              {inputs.email}. No hace falta reenviarlo.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Pie -->
+        <tr>
+          <td style="background-color:#1c3829;padding:16px 32px;">
+            <p style="color:#c5d9c6;font-family:'Open Sans',Arial,sans-serif;font-size:12px;line-height:1.6;margin:0;">
+              Enviado desde forestalleon.cl el {date.d/m/Y} a las {date.H:i}<br>
+              Este correo se genera automáticamente al enviarse el formulario.
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>

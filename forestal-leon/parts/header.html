@@ -1,0 +1,82 @@
+<!-- wp:group {"className":"fl-cabecera","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"constrained","contentSize":"1600px"}} -->
+<div class="wp-block-group fl-cabecera" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:site-logo {"width":170} /-->
+
+<!-- wp:html -->
+<nav class="fl-nav" aria-label="Navegación principal">
+	<button class="fl-nav__hamburguesa" type="button" aria-expanded="false" aria-controls="fl-nav-lista">
+		<span class="fl-nav__barras" aria-hidden="true"></span>
+		<span class="screen-reader-text">Menú</span>
+	</button>
+
+	<ul class="fl-nav__lista" id="fl-nav-lista">
+		<li class="fl-nav__item"><a href="/">Inicio</a></li>
+		<li class="fl-nav__item fl-nav__item--mega">
+			<a href="/construccion-en-madera">Construcción en madera</a>
+			<button class="fl-nav__desplegar" type="button" aria-expanded="false" aria-controls="fl-mega-construccion">
+				<span class="screen-reader-text">Mostrar soluciones de construcción</span>
+				<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+			</button>
+
+			<div class="fl-mega" id="fl-mega-construccion" hidden>
+				<div class="fl-mega__interior fl-mega__interior--dos">
+					<div class="fl-mega__col">
+						<a class="fl-mega__titulo" href="/construccion-en-madera">Soluciones constructivas</a>
+						<ul>
+							<li><a href="/construccion-en-madera/referencias">Referencias</a></li>
+							<li><a href="/construccion-en-madera/madera-material-construccion">La madera como material de construcción</a></li>
+						</ul>
+					</div>
+
+					<div class="fl-mega__col">
+						<a class="fl-mega__titulo" href="/proyectos">Tipos de proyecto</a>
+						<ul>
+							<li><a href="/construccion-en-madera/viviendas">Viviendas</a></li>
+							<li><a href="/construccion-en-madera/edificios">Edificios</a></li>
+							<li><a href="/construccion-en-madera/turismo">Turismo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li class="fl-nav__item fl-nav__item--mega">
+			<a href="/productos">Productos</a>
+			<button class="fl-nav__desplegar" type="button" aria-expanded="false" aria-controls="fl-mega-productos">
+				<span class="screen-reader-text">Mostrar productos</span>
+				<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+			</button>
+
+			<!--
+				Solo las tres familias son destino navegable. Los productos de
+				cada una (seca cepillada, ranurado, deck…) van como secciones
+				dentro de la página de su familia: no hay material suficiente
+				para sostener una página por producto.
+			-->
+			<div class="fl-mega" id="fl-mega-productos" hidden>
+				<div class="fl-mega__interior fl-mega__interior--una">
+					<div class="fl-mega__col">
+						<a class="fl-mega__titulo" href="/madera-aserrada">Madera aserrada</a>
+						<a class="fl-mega__titulo" href="/plywood">Plywood</a>
+						<a class="fl-mega__titulo" href="/laminado">Laminado</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+
+		<li class="fl-nav__item"><a href="/empresa">Quiénes Somos</a></li>
+		<li class="fl-nav__item"><a href="/contacto">Contacto</a></li>
+		<li class="fl-nav__item"><a href="/grupo-leon">Grupo León</a></li>
+		<li class="fl-nav__item"><a href="/noticias">Noticias</a></li>
+
+		<li class="fl-nav__item fl-nav__item--idioma">
+			<a href="/" lang="es" aria-current="true">ES</a>
+			<span aria-hidden="true">/</span>
+			<a href="/en/" lang="en">EN</a>
+		</li>
+	</ul>
+</nav>
+<!-- /wp:html --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

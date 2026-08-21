@@ -1,0 +1,1680 @@
+{
+ "version": "0.4",
+ "title": "Quiénes Somos",
+ "type": "page",
+ "content": [
+  {
+   "id": "2b5ccd",
+   "elType": "container",
+   "settings": {
+    "_title": "Apertura",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "32",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "5fa88a",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2b1eef",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Quiénes somos",
+        "header_size": "h1",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2b3dde",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Más de 50 años llevando la madera chilena a su mayor expresión técnica",
+        "header_size": "h2",
+        "title_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 46,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.05,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2b9aab",
+   "elType": "container",
+   "settings": {
+    "_title": "Vídeo corporativo",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "5fc779",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2b7bbc",
+       "elType": "widget",
+       "widgetType": "video",
+       "settings": {
+        "video_type": "youtube",
+        "youtube_url": "https://www.youtube.com/watch?v=W7I0AbMwMwY",
+        "aspect_ratio": "169"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2bd889",
+   "elType": "container",
+   "settings": {
+    "_title": "Introducción",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "5fe668",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2bb99a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Forestal León fabrica productos de madera con alto valor agregado para la construcción, la arquitectura y la industria. Desde nuestros bosques propios hasta cada obra terminada, controlamos cada etapa del proceso: plantación, aserrado, impregnado, tableros, laminado y construcción.</p><p>Una trayectoria de más de 50 años como empresa familiar nos respalda, con foco permanente en innovación y en llevar la madera chilena a su mayor expresión técnica y productiva.</p><p>Operamos desde nuestra planta industrial en Coelemu, atendiendo los mercados más exigentes del país y del mundo, mientras generamos valor para nuestros clientes, nuestros colaboradores y el entorno en que nos desarrollamos.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2c7334",
+   "elType": "container",
+   "settings": {
+    "_title": "Galería de tres",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "600557",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2bf778",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Tres fotos",
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        },
+        "flex_wrap": "wrap",
+        "css_classes": "fl-fotos-altas"
+       },
+       "elements": [
+        {
+         "id": "2c1667",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "alt": "Planta de Coelemu",
+          "_title": "Imagen — Planta de Coelemu",
+          "_min_height": {
+           "unit": "px",
+           "size": 260,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "2c3556",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "alt": "Equipo",
+          "_title": "Imagen — Equipo",
+          "_min_height": {
+           "unit": "px",
+           "size": 260,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "2c5445",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "",
+           "id": ""
+          },
+          "image_size": "large",
+          "alt": "Producto terminado",
+          "_title": "Imagen — Producto terminado",
+          "_min_height": {
+           "unit": "px",
+           "size": 260,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2ceef0",
+   "elType": "container",
+   "settings": {
+    "_title": "Historia",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#FAFAF7",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "602446",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2c9223",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Historia",
+        "header_size": "h1",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2cb112",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "De una barraca en San Bernardo a la planta de Coelemu",
+        "header_size": "h2",
+        "title_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 46,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.05,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2cd001",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>El origen de Forestal León se remonta a 1957, cuando Celso Viñuela García, proveniente de la provincia de León, España, llegó a Chile con 24 años. Tras sus primeros años como empleado y comerciante, en 1973 adquirió una barraca en San Bernardo, Santiago, fundando Comercial Viñuela S.A.</p><p>En 1991, don Celso y sus hijos fundaron Forestal León Ltda., con un objetivo concreto: producir madera directamente desde el bosque para abastecer la barraca de Santiago, integrando por primera vez la cadena productiva de origen a destino.</p><p>En 1999 la empresa comenzó a trabajar en la zona de Coelemu, desarrollando gradualmente su presencia en la región hasta consolidar lo que hoy es su planta industrial.</p><p>En 2012 nació Energía León S.A., transformando los residuos del proceso productivo en energía eléctrica y vapor para abastecer las propias instalaciones y las comunidades aledañas.</p><p>En 2022 se incorporaron dos nuevas áreas estratégicas: Vivero León, con plantas de alta calidad genética, y Construcción en Madera, hacia soluciones constructivas especializadas.</p><p>Hoy, con más de 50 años de trayectoria, Forestal León proyecta su futuro con un objetivo claro: liderar la construcción en madera en Chile y América.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2d899b",
+   "elType": "container",
+   "settings": {
+    "_title": "Misión y visión",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "128",
+     "right": "0",
+     "bottom": "128",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#1C3829",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "css_classes": "fl-seccion-oscura",
+    "background_image": {
+     "url": "/wp-content/themes/forestal-leon/assets/images/fondo-mision-vision.jpg",
+     "id": "",
+     "size": "",
+     "alt": "",
+     "source": "library"
+    },
+    "background_size": "cover",
+    "background_position": "center center",
+    "background_repeat": "no-repeat",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "#12261B",
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 0.82,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "604335",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2d0ddf",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Misión",
+        "header_size": "p",
+        "title_color": "#C5D9C6",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.2,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2d2cce",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Llevar las propiedades únicas de la madera —su resistencia, versatilidad y carácter renovable— a los mercados más exigentes de Chile y el mundo, con productos y soluciones constructivas de alta ingeniería que posicionan a la madera como el material de construcción del futuro.</p>",
+        "text_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2d4bbd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Visión",
+        "header_size": "p",
+        "title_color": "#C5D9C6",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.2,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2d6aac",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Ser el referente de la construcción en madera en Chile y América, reconocidos por la calidad técnica de nuestros productos, la innovación permanente en soluciones de madera de ingeniería y el aprovechamiento integral y responsable de nuestros bosques.</p>",
+        "text_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2efccf",
+   "elType": "container",
+   "settings": {
+    "_title": "Valores",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "606224",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2da88a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nuestros valores",
+        "header_size": "h1",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2dc779",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Sustentabilidad",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2de668",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No es un objetivo, es la base de nuestro modelo productivo. Gestionamos bosques propios con criterios de renovabilidad y transformamos cada parte del árbol en un producto con propósito, desde la madera elaborada hasta la energía generada con nuestros residuos.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2e0557",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Integridad",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2e2446",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Con más de 50 años de trayectoria familiar hemos construido relaciones de largo plazo con clientes, proveedores y colaboradores sobre la transparencia y el cumplimiento.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2e4335",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Excelencia técnica",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2e6224",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Invertimos en tecnología, capacitación y mejora continua: la precisión y el rigor técnico son la base de productos que perduran y proyectos que no fallan.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2e8113",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Innovación",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2ea002",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>De la mejora genética de las plantas del vivero a vigas laminadas capaces de reemplazar al acero y al hormigón en estructuras de alta exigencia.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2ebef1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Visión de largo plazo",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2edde0",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Llevamos más de 50 años reinventando el negocio, incorporando tecnología, abriendo áreas nuevas y anticipándonos a los cambios del mercado.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "b41eef",
+   "elType": "container",
+   "settings": {
+    "_title": "Contacto",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#ECEBE6"
+   },
+   "elements": [
+    {
+     "id": "b43dde",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "b45ccd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Contacto",
+        "header_size": "h2",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "b47bbc",
+       "elType": "container",
+       "settings": {
+        "_title": "Cuatro servicios",
+        "content_width": "full",
+        "flex_direction": "row",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "b49aab",
+         "elType": "container",
+         "settings": {
+          "_title": "Compra de productos",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "b4b99a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Compra de productos",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "b4d889",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Cotiza madera aserrada, estructural o laminados.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b4f778",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Solicitar cotización",
+            "link": {
+             "url": "/contacto/#compra-de-productos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b51667",
+         "elType": "container",
+         "settings": {
+          "_title": "Construcción e ingeniería",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "b53556",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Construcción e ingeniería",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "b55445",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Desarrolla tu proyecto en madera con nosotros.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b57334",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Desarrollar un proyecto",
+            "link": {
+             "url": "/contacto/#construccion-e-ingenieria",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b59223",
+         "elType": "container",
+         "settings": {
+          "_title": "Reclamos y MPD",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "b5b112",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Reclamos y MPD",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "b5d001",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Canal formal de reclamos y prevención de delitos.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b5eef0",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Presentar un caso",
+            "link": {
+             "url": "/contacto/#reclamos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b60ddf",
+         "elType": "container",
+         "settings": {
+          "_title": "Contacto general",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "b62cce",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Contacto general",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "b64bbd",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Prensa, alianzas y cualquier otra consulta.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b66aac",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Escríbenos",
+            "link": {
+             "url": "/contacto/#contacto-general",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}
