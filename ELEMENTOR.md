@@ -1,4 +1,8 @@
-# Forestal León con Elementor — ajustes previos
+# Forestal León con Elementor — configuración en uso
+
+> Escrito el 9 de agosto de 2026 como preparación, y aplicado el 18 de agosto al
+> maquetar las páginas. **Estos son los valores que la web usa hoy**, no una
+> propuesta. Las 17 plantillas exportadas están en `elementor/`.
 
 El tema sigue puesto y sigue dando la cabecera, el pie, los colores, las
 tipografías, el catálogo de productos y las nueve fichas. Lo único que pasa a

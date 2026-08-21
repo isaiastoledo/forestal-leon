@@ -21,44 +21,72 @@ La arquitectura sigue el documento **«Programa forestal león»**: 7 secciones,
 productos en 3 familias y proyectos de construcción por tipo.
 
 ```
-F:\forestal-leon\
-├── forestal-leon\               ← el tema (esto va a WordPress)
-│   ├── theme.json               19 colores, 9 tamaños, 8 espaciados
-│   ├── style.css
+forestal-leon/
+├── index.html                   maqueta del home · publicada en GitHub Pages
+├── LEEME.md                     guía para probar colores sin saber programar
+├── forestal-leon/               ← el tema (esto va a WordPress)
+│   ├── theme.json               20 colores, 9 tamaños de texto, 8 espaciados
+│   ├── style.css                1.298 líneas
 │   ├── functions.php            logo, tipos Productos y Proyectos
-│   ├── templates\               front-page + catálogo + fichas + 6 más
-│   ├── parts\                   cabecera de 7 secciones · pie
-│   ├── patterns\                9 secciones con los textos de la estructura
-│   ├── assets\images\           logotipo verde y blanco
+│   ├── templates/               12 plantillas
+│   ├── parts/                   cabecera · pie
+│   ├── patterns/                20 secciones con los textos de la estructura
+│   ├── assets/images/           logotipo verde y blanco
 │   ├── ESTRUCTURA.md            ← mapa documento → tema, y qué falta
 │   ├── DESIGN-SYSTEM.md
 │   └── INSTALAR.md
-├── forestal-leon.zip            paquete listo para subir
-├── index.html                   maqueta del home (publicada en GitHub Pages)
-└── empaquetar.py                regenera el ZIP
+├── elementor/                   las 17 páginas exportadas de Elementor
+├── fotos-web/                   18 fotografías optimizadas
+└── empaquetar.py                genera forestal-leon.zip
 ```
 
-## Por qué tema de bloques y no Elementor
+El ZIP del tema no está en el repositorio: se genera con `empaquetar.py` y se
+publica en [Releases](../../releases). Los originales de fotografía tampoco.
 
-Decisión tomada el 9 de agosto de 2026, tras evaluar las dos opciones.
+## Cómo conviven el tema y Elementor
 
-En `WEB FORESTAL LEON\WEB PLANTILLA` hay un Template Kit de Elementor
-(formato Envato, `manifest_version` 1.0.23) que se planteó como alternativa.
-Se descartó por tres motivos:
+No es una cosa o la otra: **el reparto es tema para el armazón, Elementor para el
+contenido de las páginas.** Conviene entenderlo antes de tocar nada, porque
+desactivar cualquiera de los dos rompe media web.
 
-1. **La cabecera fija que cambia de color al hacer scroll es una plantilla de
-   cabecera, y eso vive en el Theme Builder de Elementor, que es de pago.**
-   Aquí solo hay Elementor gratuito, así que ese comportamiento —el que se pidió
-   expresamente— no se podría reproducir.
-2. El kit de referencia arrastra cuatro plugins (Elementor, ElementsKit Lite,
-   Gum Elementor Addon, MetForm). Este tema no depende de ninguno.
-3. Elementor genera bastante más HTML y CSS por página que un tema de bloques.
+| Lo da el tema de bloques | Lo da Elementor gratuito |
+|---|---|
+| Cabecera fija con los desplegables y el selector de idioma | El cuerpo de las 17 páginas |
+| Pie verde de cuatro columnas | |
+| Colores, tipografías y espaciados (`theme.json`) | |
+| Catálogo de productos y sus familias | |
+| Plantillas de artículo y de proyecto | |
 
-Si algún día se reconsidera: lo reaprovechable son los 19 colores con sus ratios
-de contraste, la escala tipográfica y los textos —todo documentado en
-`DESIGN-SYSTEM.md` y `ESTRUCTURA.md`—. Lo que habría que rehacer desde cero es
-`theme.json`, `style.css`, las 11 plantillas y los 14 patrones: no existe
-conversión automática entre Gutenberg y Elementor.
+### Por qué así
+
+La decisión del **9 de agosto de 2026** fue construir un tema de bloques en lugar
+de partir del Template Kit de Elementor que hay en `WEB FORESTAL LEON\WEB
+PLANTILLA` (Envato, `manifest_version` 1.0.23). El motivo de fondo sigue vigente
+y es el que explica el reparto actual:
+
+**La cabecera fija que cambia de color al hacer scroll es una plantilla de
+cabecera, y eso vive en el Theme Builder de Elementor, que es de pago.** Aquí
+solo hay Elementor gratuito. Por eso la cabecera —y con ella el pie, la paleta y
+el catálogo— se quedan en el tema.
+
+Pesaba también que el kit arrastra cuatro plugins (Elementor, ElementsKit Lite,
+Gum Elementor Addon, MetForm) y que Elementor genera bastante más HTML y CSS por
+página.
+
+El **18 de agosto** se maquetó el contenido de las páginas con Elementor y se
+exportaron las 17 plantillas a `elementor/`. El tema no se tocó: siguió dando
+todo lo de la columna izquierda. De ahí el híbrido.
+
+### Qué implica en la práctica
+
+- **No desactivar Elementor.** Se vaciaría el contenido de las 17 páginas.
+- **No rehacer en Elementor lo que da el tema.** Se duplicaría. La lista está en
+  [ELEMENTOR.md](ELEMENTOR.md), apartado 5.
+- **Los colores y tipografías se tocan en dos sitios.** En `theme.json` para el
+  armazón y en Ajustes del sitio de Elementor para las páginas. Si solo se cambia
+  uno, la web queda a dos colores. Los valores están en [ELEMENTOR.md](ELEMENTOR.md).
+- Los formularios son **Fluent Forms** insertados con el widget Shortcode; ver
+  [FORMULARIOS.md](FORMULARIOS.md).
 
 ## Instalar
 
@@ -84,7 +112,7 @@ python empaquetar.py
 No uses `Compress-Archive` de Windows: escribe las rutas internas con `\` y
 WordPress sobre Linux no encuentra la carpeta del tema.
 
-## Dos decisiones abiertas
+## Decisiones de diseño
 
 1. **El verde.** El del logotipo (`#01735A`) no coincide con el del kit
    (`#2E5940`); la diferencia es ΔE 15.9, visible. Se usa el del logotipo como
@@ -92,12 +120,14 @@ WordPress sobre Linux no encuentra la carpeta del tema.
 2. **La tipografía.** El kit pide Cormorant Garamond + DM Sans; el tema mantiene
    la Open Sans condensada del diseño clonado. Ver `DESIGN-SYSTEM.md` § 2.
 
-3. **Los formularios.** La estructura pide cuatro, cada uno a un correo distinto.
-   WordPress no trae formularios: hace falta un plugin. Ver `ESTRUCTURA.md`.
+**Resuelto — los formularios.** Se pedían cuatro, cada uno a un correo distinto.
+Se resolvió con Fluent Forms y FluentSMTP, ambos gratuitos, insertados en las
+páginas con el widget Shortcode de Elementor. Ver [FORMULARIOS.md](FORMULARIOS.md).
 
 ## Pendiente
 
-Fotografías (hay ~60 en `WEB FORESTAL LEON\9FOTOS PRODUCTOS`), fichas de los 9
-productos, obras de referencia, contenidos de Empresa (están en
-`Textos pagina FL oficial.docx`), los 4 formularios y `screenshot.png` del tema.
+`screenshot.png` del tema, que sigue sin existir. Del resto de la lista original
+—fotografías, fichas de producto, obras de referencia, contenidos de Empresa— hay
+18 imágenes ya optimizadas en `fotos-web/` y el contenido volcado en las páginas
+de Elementor; conviene repasar qué queda realmente antes de darlo por cerrado.
 Lista completa en [forestal-leon/ESTRUCTURA.md](forestal-leon/ESTRUCTURA.md).

@@ -1,8 +1,14 @@
 # Instalar el tema Forestal León
 
 Requisitos: WordPress 6.5 o superior y PHP 7.4 o superior.
-Es un tema de bloques (Full Site Editing): no necesita Elementor, Divi ni ningún
-otro constructor. De hecho conviene no tenerlos activos.
+Es un tema de bloques (Full Site Editing) y no depende de ningún constructor para
+funcionar.
+
+> **Pero en esta web Elementor sí hace falta y debe seguir activo.** Desde el 18
+> de agosto de 2026 el contenido de las 17 páginas está maquetado con Elementor
+> gratuito; el tema aporta cabecera, pie, colores, tipografías y el catálogo de
+> productos. Desactivar Elementor vaciaría las páginas. El reparto está explicado
+> en el [README](../README.md) y la configuración en [ELEMENTOR.md](../ELEMENTOR.md).
 
 ---
 
