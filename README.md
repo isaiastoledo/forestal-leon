@@ -7,7 +7,7 @@
 
 # Forestal León — tema de WordPress
 
-Clon del diseño de `binderholz.com/es/` con el logotipo y los colores corporativos
+Basado en el diseño de `binderholz.com/es/` con el logotipo y los colores corporativos
 de Forestal León (Coelemu, Región de Ñuble).
 
 - **Estructura, retícula, tipografía y geometría:** medidas extraídas de binderholz
