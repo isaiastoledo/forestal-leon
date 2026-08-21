@@ -1,3 +1,10 @@
+> ### ¿Vienes a ver o probar el diseño?
+> **Maqueta en vivo:** https://isaiastoledo.github.io/forestal-leon/
+> **Cómo probar colores y tipografías:** [LEEME.md](LEEME.md)
+>
+> Lo que sigue es documentación técnica del tema. La web publicada
+> (forestalleon.cl) no se modifica desde este repositorio.
+
 # Forestal León — tema de WordPress
 
 Clon del diseño de `binderholz.com/es/` con el logotipo y los colores corporativos
