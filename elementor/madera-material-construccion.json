@@ -4,7 +4,7 @@
  "type": "page",
  "content": [
   {
-   "id": "f49aab",
+   "id": "b10001",
    "elType": "container",
    "settings": {
     "_title": "Portada",
@@ -17,19 +17,18 @@
     },
     "padding": {
      "unit": "px",
-     "top": "120",
+     "top": "112",
      "right": "0",
-     "bottom": "120",
+     "bottom": "64",
      "left": "0",
      "isLinked": false
     },
     "background_background": "classic",
-    "background_color": "#1C3829",
-    "css_classes": "fl-seccion-oscura"
+    "background_color": "#FFFFFF"
    },
    "elements": [
     {
-     "id": "f47bbc",
+     "id": "b10002",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -43,9 +42,9 @@
       },
       "flex_gap": {
        "unit": "px",
-       "size": 24,
-       "column": "24",
-       "row": "24"
+       "size": 20,
+       "column": "20",
+       "row": "20"
       },
       "padding": {
        "unit": "px",
@@ -54,17 +53,22 @@
        "bottom": "0",
        "left": "0",
        "isLinked": false
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 1312,
+       "sizes": []
       }
      },
      "elements": [
       {
-       "id": "f41eef",
+       "id": "b10003",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "Construcción en madera",
         "header_size": "p",
-        "title_color": "#FFFFFF",
+        "title_color": "#01735A",
         "typography_typography": "custom",
         "typography_font_family": "Open Sans",
         "typography_font_size": {
@@ -91,13 +95,13 @@
        "elements": []
       },
       {
-       "id": "f43dde",
+       "id": "b10004",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "La madera como material de construcción",
         "header_size": "h1",
-        "title_color": "#FFFFFF",
+        "title_color": "#01735A",
         "typography_typography": "custom",
         "typography_font_family": "Open Sans",
         "typography_font_size": {
@@ -126,13 +130,337 @@
        "elements": []
       },
       {
-       "id": "f45ccd",
+       "id": "b10005",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "Construir en madera no es una tendencia. Es una decisión técnica respaldada por la ciencia y las necesidades modernas.",
         "header_size": "h2",
-        "title_color": "#FFFFFF",
+        "title_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.25,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "b10006",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Entradilla",
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "b10007",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>La madera lleva siglos siendo parte de la construcción. Lo que ha cambiado es la ciencia detrás de ella. Hoy, con tecnología de fabricación de alta precisión y profundo conocimiento de sus propiedades estructurales, la madera de ingeniería compite de igual a igual con el hormigón y el acero, y los supera en varios aspectos críticos para la construcción actual.</p>",
+          "text_color": "#3C3C38",
+          "typography_typography": "custom",
+          "typography_font_family": "Open Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.75,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "b15000",
+   "elType": "container",
+   "settings": {
+    "_title": "Banda — vídeo",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 12,
+     "column": "12",
+     "row": "12"
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "flex_align_items": "flex-start"
+   },
+   "elements": [
+    {
+     "id": "b15001",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Vídeo",
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "px",
+       "size": 900,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "box_shadow_box_shadow_type": "yes",
+      "box_shadow_box_shadow": {
+       "horizontal": 0,
+       "vertical": 12,
+       "blur": 40,
+       "spread": 0,
+       "color": "rgba(26,26,23,0.12)"
+      },
+      "animation": "fadeInUp",
+      "animation_duration": "slow",
+      "animation_delay": 0,
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "b15004",
+       "elType": "widget",
+       "widgetType": "video",
+       "settings": {
+        "_title": "PROVISIONAL — sustituir por el vídeo de construcción",
+        "video_type": "youtube",
+        "youtube_url": "https://www.youtube.com/watch?v=W7I0AbMwMwY",
+        "aspect_ratio": "169",
+        "yt_privacy": "yes",
+        "modestbranding": "yes",
+        "rel": "",
+        "controls": "yes",
+        "autoplay": "",
+        "mute": "",
+        "loop": "",
+        "lazy_load": "yes"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "b15002",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Pie de vídeo",
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 1312,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "b15003",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Fabricación de vigas laminadas en la planta de Coelemu.</p>",
+        "text_color": "#6B6B64",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "b20000",
+   "elType": "container",
+   "settings": {
+    "_title": "Ventajas",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "#F4EFE4",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#ECEBE6",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 45,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 180,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "b20001",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 64,
+       "column": "64",
+       "row": "64"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 1312,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "b20002",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Ventajas técnicas",
+        "header_size": "h2",
+        "title_color": "#01735A",
         "typography_typography": "custom",
         "typography_font_family": "Open Sans",
         "typography_font_size": {
@@ -151,84 +479,21 @@
          "sizes": []
         },
         "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
         "typography_line_height": {
          "unit": "em",
          "size": 1.15,
          "sizes": []
-        },
-        "_margin": {
-         "unit": "px",
-         "top": "4",
-         "right": "0",
-         "bottom": "24",
-         "left": "0",
-         "isLinked": false
         }
        },
        "elements": []
-      }
-     ]
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "f57334",
-   "elType": "container",
-   "settings": {
-    "_title": "Introducción",
-    "content_width": "full",
-    "flex_direction": "column",
-    "width": {
-     "unit": "%",
-     "size": 100,
-     "sizes": []
-    },
-    "padding": {
-     "unit": "px",
-     "top": "96",
-     "right": "0",
-     "bottom": "96",
-     "left": "0",
-     "isLinked": false
-    }
-   },
-   "elements": [
-    {
-     "id": "f55445",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "_title": "Contenido",
-      "content_width": "boxed",
-      "flex_direction": "column",
-      "width": {
-       "unit": "%",
-       "size": 100,
-       "sizes": []
       },
-      "flex_gap": {
-       "unit": "px",
-       "size": 24,
-       "column": "24",
-       "row": "24"
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": false
-      }
-     },
-     "elements": [
       {
-       "id": "f53556",
+       "id": "b21000",
        "elType": "container",
        "isInner": true,
        "settings": {
-        "_title": "Dos columnas",
+        "_title": "Ligereza, prefabricación y costo",
         "content_width": "full",
         "flex_direction": "row",
         "width": {
@@ -252,11 +517,14 @@
         },
         "flex_wrap": "wrap",
         "flex_align_items": "center",
-        "flex_justify_content": "space-between"
+        "flex_justify_content": "space-between",
+        "animation": "fadeInUp",
+        "animation_duration": "slow",
+        "animation_delay": 0
        },
        "elements": [
         {
-         "id": "f4d889",
+         "id": "b21001",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -285,17 +553,49 @@
          },
          "elements": [
           {
-           "id": "f4b99a",
+           "id": "b21002",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Ligereza, prefabricación y costo",
+            "header_size": "h3",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.3,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "8",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b21003",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>La madera lleva siglos siendo parte de la construcción. Lo que ha cambiado es la ciencia detrás de ella. Hoy, con tecnología de fabricación de alta precisión y profundo conocimiento de sus propiedades estructurales, la madera de ingeniería compite de igual a igual con el hormigón y el acero, y los supera en varios aspectos críticos para la construcción actual.</p>",
+            "editor": "<p><strong>Ligereza estructural.</strong> Mucho más liviana que el hormigón y el acero: reduce las cargas sobre las fundaciones y su costo. Determinante al añadir plantas sobre edificios existentes.</p><p><strong>Prefabricación y velocidad.</strong> Los componentes llegan a obra prácticamente terminados. Se eliminan los tiempos de fraguado y curado, y el plazo se acorta en semanas o meses.</p><p><strong>Menor costo total de obra.</strong> Menos tiempo de obra, menos mano de obra en terreno, fundaciones más simples y menos equipamiento logístico. El ahorro es concreto y medible.</p>",
             "text_color": "#3C3C38",
             "typography_typography": "custom",
             "typography_font_family": "Open Sans",
             "typography_font_size": {
              "unit": "px",
-             "size": 17,
+             "size": 16,
              "sizes": []
             },
             "typography_line_height": {
@@ -309,11 +609,237 @@
          ]
         },
         {
-         "id": "f51667",
+         "id": "b21004",
          "elType": "container",
          "isInner": true,
          "settings": {
           "_title": "Foto",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 48,
+           "sizes": []
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "b21005",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-prefabricacion.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Prefabricación de componentes de madera laminada",
+            "_title": "Foto — Prefabricación",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "image_box_shadow_box_shadow_type": "yes",
+            "image_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 4,
+             "blur": 16,
+             "spread": 0,
+             "color": "rgba(26,26,23,0.08)"
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b25000",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Más superficie útil",
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "#D4D0C8",
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 4,
+         "blur": 16,
+         "spread": 0,
+         "color": "rgba(26,26,23,0.08)"
+        },
+        "animation": "fadeInUp",
+        "animation_duration": "slow",
+        "animation_delay": 100
+       },
+       "elements": [
+        {
+         "id": "b25001",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Más superficie útil",
+          "header_size": "h4",
+          "title_color": "#1A1A17",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_family": "Open Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "typography_font_weight": "700"
+         },
+         "elements": []
+        },
+        {
+         "id": "b25002",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<div style='max-width:820px;margin:16px auto 0;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-end;justify-content:center;'><div style='text-align:center;'><svg width='200' height='200' viewBox='0 0 200 200' aria-hidden='true'><rect x='8' y='8' width='184' height='184' fill='none' stroke='#8A8679' stroke-width='20'/><rect x='28' y='28' width='144' height='144' fill='#ECEBE6'/></svg><p style='margin:12px 0 0;font-family:Open Sans,sans-serif;font-size:15px;font-weight:700;color:#1A1A17;'>Muro tradicional</p><p style='margin:4px 0 0;font-family:Open Sans,sans-serif;font-size:13px;color:#6B6B64;'>Muro portante grueso</p></div><div style='text-align:center;'><svg width='200' height='200' viewBox='0 0 200 200' aria-hidden='true'><rect x='8' y='8' width='184' height='184' fill='none' stroke='#01735A' stroke-width='9'/><rect x='17' y='17' width='166' height='166' fill='#ECEBE6'/></svg><p style='margin:12px 0 0;font-family:Open Sans,sans-serif;font-size:15px;font-weight:700;color:#1A1A17;'>Muro en madera laminada</p><p style='margin:4px 0 0;font-family:Open Sans,sans-serif;font-size:13px;color:#6B6B64;'>Muro portante esbelto</p></div></div><p style='max-width:620px;margin:24px auto 0;text-align:center;font-family:Open Sans,sans-serif;font-size:15px;line-height:1.75;color:#6B6B64;'>A igual huella, un muro portante más esbelto deja más metros cuadrados interiores aprovechables. La proporción exacta depende del sistema constructivo y del cálculo de cada proyecto.</p>"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "b22000",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Resistencia técnica",
+        "content_width": "full",
+        "flex_direction": "row",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap",
+        "flex_align_items": "center",
+        "flex_justify_content": "space-between",
+        "animation": "fadeInUp",
+        "animation_duration": "slow",
+        "animation_delay": 0
+       },
+       "elements": [
+        {
+         "id": "b22001",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Foto",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 48,
+           "sizes": []
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "b22002",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-resistencia.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Cercha laminada en una nave industrial",
+            "_title": "Foto — Resistencia técnica",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "image_box_shadow_box_shadow_type": "yes",
+            "image_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 4,
+             "blur": 16,
+             "spread": 0,
+             "color": "rgba(26,26,23,0.08)"
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "b22003",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Texto",
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -338,20 +864,54 @@
          },
          "elements": [
           {
-           "id": "f4f778",
+           "id": "b22004",
            "elType": "widget",
-           "widgetType": "image",
+           "widgetType": "heading",
            "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-resistencia.jpg",
-             "id": ""
+            "title": "Resistencia técnica",
+            "header_size": "h3",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
             },
-            "image_size": "full",
-            "alt": "Cercha laminada en una nave industrial",
-            "_title": "Foto — cercha laminada",
-            "width": {
-             "unit": "%",
-             "size": 100,
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.3,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "8",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "b22005",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>Resistencia técnica superior.</strong> En relación a su peso propio soporta cargas muy superiores a las del acero, y su resistencia a la compresión es comparable a la del hormigón armado.</p><p><strong>Resistencia a la torsión.</strong> La orientación alternada de las fibras en cada lámina neutraliza las tensiones internas y mantiene la geometría de la pieza bajo cargas dinámicas.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
              "sizes": []
             }
            },
@@ -360,113 +920,322 @@
          ]
         }
        ]
-      }
-     ]
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "fc9449",
-   "elType": "container",
-   "settings": {
-    "_title": "Ventajas",
-    "content_width": "full",
-    "flex_direction": "column",
-    "width": {
-     "unit": "%",
-     "size": 100,
-     "sizes": []
-    },
-    "padding": {
-     "unit": "px",
-     "top": "96",
-     "right": "0",
-     "bottom": "96",
-     "left": "0",
-     "isLinked": false
-    },
-    "background_background": "classic",
-    "background_color": "#ECEBE6"
-   },
-   "elements": [
-    {
-     "id": "fc755a",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "_title": "Contenido",
-      "content_width": "boxed",
-      "flex_direction": "column",
-      "width": {
-       "unit": "%",
-       "size": 100,
-       "sizes": []
-      },
-      "flex_gap": {
-       "unit": "px",
-       "size": 24,
-       "column": "24",
-       "row": "24"
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": false
-      }
-     },
-     "elements": [
-      {
-       "id": "f59223",
-       "elType": "widget",
-       "widgetType": "heading",
-       "settings": {
-        "title": "Ventajas técnicas",
-        "header_size": "h2",
-        "title_color": "#3C3C38",
-        "typography_typography": "custom",
-        "typography_font_family": "Open Sans",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 46,
-         "sizes": []
-        },
-        "typography_font_size_tablet": {
-         "unit": "px",
-         "size": 34,
-         "sizes": []
-        },
-        "typography_font_size_mobile": {
-         "unit": "px",
-         "size": 26,
-         "sizes": []
-        },
-        "typography_font_weight": "400",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.15,
-         "sizes": []
-        },
-        "_margin": {
-         "unit": "px",
-         "top": "4",
-         "right": "0",
-         "bottom": "24",
-         "left": "0",
-         "isLinked": false
-        }
-       },
-       "elements": []
       },
       {
-       "id": "fc566b",
+       "id": "b23000",
        "elType": "container",
        "isInner": true,
        "settings": {
-        "_title": "Rejilla de ventajas",
+        "_title": "Seguridad ante sismo e incendio",
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 32,
+         "column": "32",
+         "row": "32"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#01735A",
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 4,
+         "blur": 16,
+         "spread": 0,
+         "color": "rgba(26,26,23,0.08)"
+        },
+        "animation": "fadeInUp",
+        "animation_duration": "slow",
+        "animation_delay": 100
+       },
+       "elements": [
+        {
+         "id": "b23001",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Fila",
+          "content_width": "full",
+          "flex_direction": "row",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 48,
+           "column": "48",
+           "row": "32"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_wrap": "wrap",
+          "flex_align_items": "center",
+          "flex_justify_content": "space-between"
+         },
+         "elements": [
+          {
+           "id": "b23002",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "_title": "Texto",
+            "content_width": "full",
+            "flex_direction": "column",
+            "width": {
+             "unit": "%",
+             "size": 48,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "b23003",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Seguridad ante sismo e incendio",
+              "header_size": "h3",
+              "title_color": "#1A1A17",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 24,
+               "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.3,
+               "sizes": []
+              },
+              "_margin": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "8",
+               "left": "0",
+               "isLinked": false
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "b23004",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><strong>Comportamiento sísmico.</strong> Criterio no negociable en Chile. Su flexibilidad, unida al bajo peso y la alta resistencia, absorbe y disipa la energía del sismo con eficiencia.</p><p><strong>Comportamiento ante el fuego.</strong> Mejor que el acero: forma una capa superficial de carbón que aísla el núcleo y mantiene la capacidad portante mucho más tiempo que una viga metálica.</p>",
+              "text_color": "#3C3C38",
+              "typography_typography": "custom",
+              "typography_font_family": "Open Sans",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.75,
+               "sizes": []
+              }
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "b23005",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "_title": "Fotos",
+            "content_width": "full",
+            "flex_direction": "row",
+            "width": {
+             "unit": "%",
+             "size": 48,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "flex_wrap": "wrap"
+           },
+           "elements": [
+            {
+             "id": "b23006",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "width": {
+               "unit": "%",
+               "size": 48,
+               "sizes": []
+              },
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "0",
+               "left": "0",
+               "isLinked": false
+              }
+             },
+             "elements": [
+              {
+               "id": "b23007",
+               "elType": "widget",
+               "widgetType": "image",
+               "settings": {
+                "image": {
+                 "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-sismico.jpg",
+                 "id": ""
+                },
+                "image_size": "full",
+                "alt": "Comportamiento sísmico",
+                "_title": "Foto — Sísmico",
+                "width": {
+                 "unit": "%",
+                 "size": 100,
+                 "sizes": []
+                },
+                "image_box_shadow_box_shadow_type": "yes",
+                "image_box_shadow_box_shadow": {
+                 "horizontal": 0,
+                 "vertical": 1,
+                 "blur": 2,
+                 "spread": 0,
+                 "color": "rgba(26,26,23,0.06)"
+                }
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "b23008",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "width": {
+               "unit": "%",
+               "size": 48,
+               "sizes": []
+              },
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "0",
+               "left": "0",
+               "isLinked": false
+              }
+             },
+             "elements": [
+              {
+               "id": "b23009",
+               "elType": "widget",
+               "widgetType": "image",
+               "settings": {
+                "image": {
+                 "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-fuego.jpg",
+                 "id": ""
+                },
+                "image_size": "full",
+                "alt": "Comportamiento ante el fuego",
+                "_title": "Foto — Fuego",
+                "width": {
+                 "unit": "%",
+                 "size": 100,
+                 "sizes": []
+                },
+                "image_box_shadow_box_shadow_type": "yes",
+                "image_box_shadow_box_shadow": {
+                 "horizontal": 0,
+                 "vertical": 1,
+                 "blur": 2,
+                 "spread": 0,
+                 "color": "rgba(26,26,23,0.06)"
+                }
+               },
+               "elements": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b24000",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Versatilidad, tratamiento y origen",
         "content_width": "full",
         "flex_direction": "row",
         "width": {
@@ -476,8 +1245,8 @@
         },
         "flex_gap": {
          "unit": "px",
-         "size": 24,
-         "column": "24",
+         "size": 48,
+         "column": "48",
          "row": "32"
         },
         "padding": {
@@ -489,27 +1258,25 @@
          "isLinked": false
         },
         "flex_wrap": "wrap",
-        "css_classes": "fl-ventajas"
+        "flex_align_items": "center",
+        "flex_justify_content": "space-between",
+        "animation": "fadeInUp",
+        "animation_duration": "slow",
+        "animation_delay": 0
        },
        "elements": [
         {
-         "id": "f62cce",
+         "id": "b24001",
          "elType": "container",
          "isInner": true,
          "settings": {
-          "_title": "Ligereza estructural",
+          "_title": "Foto",
           "content_width": "full",
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
           },
           "padding": {
            "unit": "px",
@@ -518,1003 +1285,11 @@
            "bottom": "0",
            "left": "0",
            "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f5b112",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-ligereza.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Ligereza estructural",
-            "_title": "Foto — Ligereza estructural",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f60ddf",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f5d001",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Ligereza estructural",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f5eef0",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Mucho más liviana que el hormigón y el acero: reduce las cargas sobre las fundaciones y su costo. Determinante al añadir plantas sobre edificios existentes.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
           }
-         ]
-        },
-        {
-         "id": "f6c779",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Prefabricación y velocidad",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
          },
          "elements": [
           {
-           "id": "f64bbd",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-prefabricacion.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Prefabricación y velocidad",
-            "_title": "Foto — Prefabricación y velocidad",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f6a88a",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f66aac",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Prefabricación y velocidad",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f6899b",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Los componentes llegan a obra prácticamente terminados. Se eliminan los tiempos de fraguado y curado, y el plazo se acorta en semanas o meses.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "f76224",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Resistencia técnica superior",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f6e668",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-resistencia.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Resistencia técnica superior",
-            "_title": "Foto — Resistencia técnica superior",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f74335",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f70557",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Resistencia técnica superior",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f72446",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>En relación a su peso propio soporta cargas muy superiores a las del acero, y su resistencia a la compresión es comparable a la del hormigón armado.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "f7fccf",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Resistencia a la torsión",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f78113",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-torsion.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Resistencia a la torsión",
-            "_title": "Foto — Resistencia a la torsión",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f7dde0",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f7a002",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Resistencia a la torsión",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f7bef1",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>La orientación alternada de las fibras en cada lámina neutraliza las tensiones internas y mantiene la geometría de la pieza bajo cargas dinámicas.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "f8977a",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Comportamiento sísmico",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f81bbe",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-sismico.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Comportamiento sísmico",
-            "_title": "Foto — Comportamiento sísmico",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f8788b",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f83aad",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Comportamiento sísmico",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f8599c",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Criterio no negociable en Chile. Su flexibilidad, unida al bajo peso y la alta resistencia, absorbe y disipa la energía del sismo con eficiencia.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "f93225",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Comportamiento ante el fuego",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f8b669",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-fuego.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Comportamiento ante el fuego",
-            "_title": "Foto — Comportamiento ante el fuego",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f91336",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f8d558",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Comportamiento ante el fuego",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f8f447",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Mejor que el acero: forma una capa superficial de carbón que aísla el núcleo y mantiene la capacidad portante mucho más tiempo que una viga metálica.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "f9ccd0",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Tratamiento de impregnado",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f95114",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-impregnado.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Tratamiento de impregnado",
-            "_title": "Foto — Tratamiento de impregnado",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "f9ade1",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "f97003",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Tratamiento de impregnado",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "f98ef2",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Aplicado en planta, eleva la durabilidad estructural. Apto para zonas de alta humedad, exteriores y ambientes industriales corrosivos.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "fa677b",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Versatilidad arquitectónica",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "f9ebbf",
+           "id": "b24002",
            "elType": "widget",
            "widgetType": "image",
            "settings": {
@@ -1524,112 +1299,43 @@
             },
             "image_size": "full",
             "alt": "Versatilidad arquitectónica",
-            "_title": "Foto — Versatilidad arquitectónica",
+            "_title": "Foto — Versatilidad",
             "width": {
              "unit": "%",
              "size": 100,
              "sizes": []
+            },
+            "image_box_shadow_box_shadow_type": "yes",
+            "image_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 4,
+             "blur": 16,
+             "spread": 0,
+             "color": "rgba(26,26,23,0.08)"
             }
            },
            "elements": []
-          },
-          {
-           "id": "fa488c",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "fa0aae",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Versatilidad arquitectónica",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "fa299d",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Grandes luces sin apoyos intermedios y estructuras curvas. El elemento estructural es a la vez terminación: la madera a la vista pasa a ser parte del diseño.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
           }
          ]
         },
         {
-         "id": "fb0226",
+         "id": "b24003",
          "elType": "container",
          "isInner": true,
          "settings": {
-          "_title": "Menor costo total de obra",
+          "_title": "Texto",
           "content_width": "full",
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
            "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
+           "size": 12,
+           "column": "12",
+           "row": "12"
           },
           "padding": {
            "unit": "px",
@@ -1638,397 +1344,62 @@
            "bottom": "0",
            "left": "0",
            "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "fa866a",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-costo.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Menor costo total de obra",
-            "_title": "Foto — Menor costo total de obra",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "fae337",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "faa559",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Menor costo total de obra",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "fac448",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Menos tiempo de obra, menos mano de obra en terreno, fundaciones más simples y menos equipamiento logístico. El ahorro es concreto y medible.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
           }
-         ]
-        },
-        {
-         "id": "fb9cd1",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Certificación FSC",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
          },
          "elements": [
           {
-           "id": "fb2115",
+           "id": "b24004",
            "elType": "widget",
-           "widgetType": "image",
+           "widgetType": "heading",
            "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-fsc.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Certificación FSC",
-            "_title": "Foto — Certificación FSC",
-            "width": {
-             "unit": "%",
-             "size": 100,
+            "title": "Versatilidad, tratamiento y origen",
+            "header_size": "h3",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 24,
              "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.3,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "8",
+             "left": "0",
+             "isLinked": false
             }
            },
            "elements": []
           },
           {
-           "id": "fb7de2",
-           "elType": "container",
-           "isInner": true,
+           "id": "b24005",
+           "elType": "widget",
+           "widgetType": "text-editor",
            "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
+            "editor": "<p><strong>Versatilidad arquitectónica.</strong> Grandes luces sin apoyos intermedios y estructuras curvas. El elemento estructural es a la vez terminación: la madera a la vista pasa a ser parte del diseño.</p><p><strong>Soluciones híbridas.</strong> Combinada con hormigón, acero y vidrio, es integrable en casi cualquier concepto arquitectónico, tanto en obra nueva como en renovación.</p><p><strong>Tratamiento de impregnado.</strong> Aplicado en planta, eleva la durabilidad estructural. Apto para zonas de alta humedad, exteriores y ambientes industriales corrosivos.</p><p><strong>Certificación FSC.</strong> Las vigas laminadas de Forestal León cuentan con certificación FSC, el sello que garantiza madera de bosques gestionados de forma responsable.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
              "sizes": []
             },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "fb4004",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Certificación FSC",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "fb5ef3",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Las vigas laminadas de Forestal León cuentan con certificación FSC, el sello que garantiza madera de bosques gestionados de forma responsable.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "fc377c",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "_title": "Soluciones híbridas",
-          "content_width": "full",
-          "flex_direction": "column",
-          "width": {
-           "unit": "%",
-           "size": 31,
-           "sizes": []
-          },
-          "flex_gap": {
-           "unit": "px",
-           "size": 0,
-           "column": "0",
-           "row": "0"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#D4D0C8"
-         },
-         "elements": [
-          {
-           "id": "fbbbc0",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/themes/forestal-leon/assets/images/ventaja-hibridas.jpg",
-             "id": ""
-            },
-            "image_size": "full",
-            "alt": "Soluciones híbridas",
-            "_title": "Foto — Soluciones híbridas",
-            "width": {
-             "unit": "%",
-             "size": 100,
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
              "sizes": []
             }
            },
            "elements": []
-          },
-          {
-           "id": "fc188d",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "_title": "Texto",
-            "content_width": "full",
-            "flex_direction": "column",
-            "width": {
-             "unit": "%",
-             "size": 100,
-             "sizes": []
-            },
-            "flex_gap": {
-             "unit": "px",
-             "size": 12,
-             "column": "12",
-             "row": "12"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "26",
-             "right": "26",
-             "bottom": "26",
-             "left": "26",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "fbdaaf",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Soluciones híbridas",
-              "header_size": "h3",
-              "title_color": "#1A1A17",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 19,
-               "sizes": []
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.3,
-               "sizes": []
-              }
-             },
-             "elements": []
-            },
-            {
-             "id": "fbf99e",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Combinada con hormigón, acero y vidrio, es integrable en casi cualquier concepto arquitectónico, tanto en obra nueva como en renovación.</p>",
-              "text_color": "#6B6B64",
-              "typography_typography": "custom",
-              "typography_font_family": "Open Sans",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 15,
-               "sizes": []
-              },
-              "typography_line_height": {
-               "unit": "em",
-               "size": 1.75,
-               "sizes": []
-              }
-             },
-             "elements": []
-            }
-           ]
           }
          ]
         }
@@ -2380,6 +1751,14 @@
            "unit": "%",
            "size": 100,
            "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
           }
          },
          "elements": [
@@ -2495,6 +1874,14 @@
            "unit": "%",
            "size": 100,
            "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
           }
          },
          "elements": [
@@ -2610,6 +1997,14 @@
            "unit": "%",
            "size": 100,
            "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
           }
          },
          "elements": [
@@ -2725,6 +2120,14 @@
            "unit": "%",
            "size": 100,
            "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
           }
          },
          "elements": [
