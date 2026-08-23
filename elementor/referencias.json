@@ -386,7 +386,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
@@ -459,7 +459,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
@@ -532,7 +532,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
@@ -605,7 +605,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
@@ -678,7 +678,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
@@ -751,7 +751,7 @@
           "flex_direction": "column",
           "width": {
            "unit": "%",
-           "size": 31,
+           "size": 48,
            "sizes": []
           },
           "flex_gap": {
