@@ -9,7 +9,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'FORESTAL_LEON_VERSION', '2.17.1' );
+/*
+ * La versión se lee de la cabecera de style.css, no se escribe aquí.
+ *
+ * Estaba escrita en los dos sitios y el 23 de agosto de 2026 se desincronizó:
+ * style.css subió a 2.18.1 y esta constante se quedó en 2.17.1. WordPress usa
+ * esta constante para forzar la recarga del CSS, así que el archivo nuevo
+ * llegaba al servidor pero los navegadores seguían sirviendo el viejo. Un fallo
+ * que además despista, porque parece de caché y no lo es.
+ *
+ * Ahora hay una sola fuente: la cabecera del tema. Al empaquetar basta con
+ * cambiar «Version:» en style.css.
+ */
+define( 'FORESTAL_LEON_VERSION', wp_get_theme()->get( 'Version' ) );
 
 /**
  * Soportes del tema.
