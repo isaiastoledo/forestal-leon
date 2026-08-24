@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.18.0
+Version: 2.18.1
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -21,22 +21,25 @@ Tags: full-site-editing, block-patterns, editor-style, wide-blocks, custom-color
    única forma fiable de que no se vean: los parámetros del reproductor las
    atenúan, pero no las eliminan. */
 
+/* Medido sobre binderholz.com/es/ el 23 de agosto de 2026: su hero no usa una
+   proporción fija, sino el alto de pantalla menos 240 px constantes. Tres
+   comprobaciones: 720→480, 900→660, 1000→760. El efecto buscado es ese margen
+   inferior fijo, que deja asomar el titular de la sección siguiente —«proporción
+   que permita que se vea el título», en palabras del cliente—. La proporción que
+   él midió, 2:1, es solo la que salía en su pantalla. */
 .elementor .fl-hero-video {
-	aspect-ratio: 1350 / 679;
-	height: auto;
-	max-height: 100vh;
-	min-height: 0;
+	height: calc( 100vh - 240px );
+	min-height: 320px;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
 }
 
-/* En vertical, 2:1 deja una franja tan baja que el titular no cabe. Se pasa a
-   4:5, que es lo que hace la referencia en móvil. */
+/* En vertical la referencia no recorta: usa el 16:9 del propio vídeo. */
 @media ( max-width: 781px ) {
 	.elementor .fl-hero-video {
-		aspect-ratio: 4 / 5;
-		max-height: 78vh;
+		aspect-ratio: 16 / 9;
+		height: auto;
+		min-height: 0;
 	}
 }
 
@@ -49,28 +52,32 @@ Tags: full-site-editing, block-patterns, editor-style, wide-blocks, custom-color
 	width: 100%;
 }
 
-/* El recorte va con «min-width» a propósito: hay un «max-width: 100%» sobre los
-   iframes que recortaría cualquier anchura mayor, y en CSS el mínimo gana al
-   máximo. El alto lo deduce «aspect-ratio», así no hay que mantener dos cifras
-   en sincronía.
-
-   Las cuentas: la caja mide W/2 de alto (2:1). Un 16:9 de 102% de ancho da
-   57,4% de W, que la tapa con un 2% de holgura. En móvil la caja mide 1,25·W
-   (4:5), así que hace falta 232% de ancho, que deja unos 20 px de holgura. */
+/* El recorte va con «min-width» y «min-height» a propósito: hay un
+   «max-width: 100%» sobre los iframes que recortaría cualquier anchura mayor, y
+   en CSS el mínimo gana al máximo. El 130% es holgura para que no asome filo
+   blanco al redondear. */
 .elementor .fl-hero-video__iframe {
-	aspect-ratio: 16 / 9;
 	border: 0;
+	height: 73vw;                /* 130% de 56.25vw */
 	left: 50%;
-	min-width: 102%;
+	min-height: 130%;
+	min-width: 231vh;           /* 130% de 177.78vh */
 	pointer-events: none;
 	position: absolute;
 	top: 50%;
 	transform: translate( -50%, -50% );
+	width: 130vw;
 }
 
+/* En móvil la caja ya es 16:9, así que el vídeo entra exacto y no hay que
+   recortarlo. */
 @media ( max-width: 781px ) {
 	.elementor .fl-hero-video__iframe {
-		min-width: 232%;
+		aspect-ratio: 16 / 9;
+		height: auto;
+		min-height: 0;
+		min-width: 100%;
+		width: auto;
 	}
 }
 
