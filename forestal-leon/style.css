@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.18.1
+Version: 2.19.0
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -1024,6 +1024,14 @@ html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
 .is-style-entradilla {
 	font-size: var( --wp--preset--font-size--x-large );
 	line-height: 1.6;
+}
+
+/* Ficha de proyecto: el texto introductorio es un párrafo largo, no una
+   entradilla breve, así que va más pequeño y justificado. No toca las demás
+   entradillas del sitio (producto, artículo, empresa…), que siguen igual. */
+.single-proyecto .is-style-entradilla {
+	font-size: calc( var( --wp--preset--font-size--large ) * 0.8 );
+	text-align: justify;
 }
 
 /* Grupo con filete verde superior. */

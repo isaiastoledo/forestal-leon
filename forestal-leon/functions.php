@@ -326,6 +326,7 @@ function forestal_leon_sembrar_taxonomias() {
 
 	forestal_leon_tipos_de_contenido();
 	forestal_leon_sembrar_productos();
+	forestal_leon_sembrar_proyecto_ejemplo();
 	forestal_leon_sembrar_paginas();
 	flush_rewrite_rules();
 
@@ -485,6 +486,113 @@ function forestal_leon_sembrar_productos() {
 
 		wp_set_object_terms( $id, $datos['familia'], 'familia-producto' );
 	}
+}
+
+/**
+ * Cuerpo de la ficha de proyecto de ejemplo (Galpón Forestal León).
+ *
+ * A diferencia de las páginas y productos, aquí el contenido ya es real —no
+ * un volcado del patrón «forestal-leon/ficha-proyecto-estructura»—, salvo el
+ * carrusel, las tres fotos, el bloque de texto y el collage final, que siguen
+ * pendientes de las imágenes y del texto que faltan.
+ *
+ * @return string Marcado de bloques.
+ */
+function forestal_leon_contenido_ficha_ejemplo() {
+	$bloques = array();
+
+	$bloques[] = '<!-- wp:group {"metadata":{"name":"Carrusel — pendiente plugin"},"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->' . "\n"
+		. '<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-antetitulo","align":"center","fontSize":"x-small"} -->' . "\n"
+		. '<p class="is-style-antetitulo has-text-align-center has-x-small-font-size">' . esc_html__( 'Carrusel de imágenes — pendiente instalar un plugin de carrusel con autoplay. Primera foto: fotos-web/galpon-01-estructura.jpg', 'forestal-leon' ) . '</p>' . "\n"
+		. '<!-- /wp:paragraph -->' . "\n\n"
+		. '<!-- wp:gallery {"columns":1,"linkTo":"none"} -->' . "\n"
+		. '<figure class="wp-block-gallery has-nested-images columns-1 is-cropped"></figure>' . "\n"
+		. '<!-- /wp:gallery --></div>' . "\n"
+		. '<!-- /wp:group -->';
+
+	$datos = array(
+		array( 'Proyecto', 'Galpón de Madera Forestal León' ),
+		array( 'Localidad', 'Coelemu' ),
+		array( 'Fecha de inicio', 'Febrero 2026' ),
+		array( 'Fecha de término', 'Marzo 2026' ),
+		array( 'Duración de ejecución', '~1 mes' ),
+		array( 'Superficie', '1.020 m²' ),
+		array( 'Volumen', 'Pendiente' ),
+		array( 'Cálculo estructural', 'JMS Constructores' ),
+		array( 'Ejecución', 'Forestal León' ),
+	);
+
+	$filas = array();
+
+	foreach ( $datos as $dato ) {
+		$filas[] = '<!-- wp:paragraph -->' . "\n"
+			. '<p><strong>' . esc_html( $dato[0] ) . '</strong> ' . esc_html( $dato[1] ) . '</p>' . "\n"
+			. '<!-- /wp:paragraph -->';
+	}
+
+	$bloques[] = '<!-- wp:group {"metadata":{"name":"Datos del proyecto"},"className":"is-style-filete-verde","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->' . "\n"
+		. '<div class="wp-block-group is-style-filete-verde"><!-- wp:heading {"level":2,"fontSize":"heading-s"} -->' . "\n"
+		. '<h2 class="wp-block-heading has-heading-s-font-size">' . esc_html__( 'Datos del proyecto', 'forestal-leon' ) . '</h2>' . "\n"
+		. '<!-- /wp:heading -->' . "\n\n"
+		. '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->' . "\n"
+		. '<div class="wp-block-group">' . implode( "\n\n", $filas ) . '</div>' . "\n"
+		. '<!-- /wp:group --></div>' . "\n"
+		. '<!-- /wp:group -->';
+
+	$bloques[] = '<!-- wp:gallery {"columns":3,"linkTo":"none","align":"full"} -->' . "\n"
+		. '<figure class="wp-block-gallery alignfull has-nested-images columns-3 is-cropped"></figure>' . "\n"
+		. '<!-- /wp:gallery -->';
+
+	$bloques[] = '<!-- wp:paragraph -->' . "\n"
+		. '<p>' . esc_html__( 'Bloque de texto pendiente: el relato de la obra o el desafío técnico. Falta el texto real.', 'forestal-leon' ) . '</p>' . "\n"
+		. '<!-- /wp:paragraph -->';
+
+	$bloques[] = '<!-- wp:paragraph {"className":"is-style-antetitulo","align":"center","fontSize":"x-small"} -->' . "\n"
+		. '<p class="is-style-antetitulo has-text-align-center has-x-small-font-size">' . esc_html__( 'Collage final — subir a Medios e insertar en este orden: galpon-02-detalle-conector-01.jpg, galpon-03-interior-testero.jpg, galpon-04-interior-nave.jpg, galpon-05-detalle-cercha.jpg, galpon-06-detalle-conector-02.jpg, galpon-07-detalle-conector-03.jpg, galpon-08-interior-luz.jpg, galpon-09-detalle-columna.jpg', 'forestal-leon' ) . '</p>' . "\n"
+		. '<!-- /wp:paragraph -->';
+
+	$bloques[] = '<!-- wp:gallery {"columns":4,"linkTo":"none","align":"full"} -->' . "\n"
+		. '<figure class="wp-block-gallery alignfull has-nested-images columns-4 is-cropped"></figure>' . "\n"
+		. '<!-- /wp:gallery -->';
+
+	return implode( "\n\n", $bloques );
+}
+
+/**
+ * Crea la ficha de proyecto de ejemplo al activar el tema.
+ *
+ * Es la que reciben, de momento, las tarjetas de referencia de Inicio,
+ * Proyectos, Referencias, Edificios y Turismo cuando se hace clic: todavía no
+ * hay una ficha por cada obra, así que todas apuntan aquí. El texto y los
+ * datos ya son los reales del Galpón Forestal León; faltan el carrusel, las
+ * tres fotos, el bloque de texto y el collage final.
+ *
+ * Cuando lleguen esas imágenes y el resto de referencias, esta ficha se
+ * completa o se reemplaza por una entrada «Proyecto» distinta por cada obra,
+ * y las tarjetas de esos cinco archivos de Elementor se actualizan para
+ * apuntar cada una a la suya en vez de a «ejemplo-referencia».
+ */
+function forestal_leon_sembrar_proyecto_ejemplo() {
+	$existente = forestal_leon_buscar_por_slug( 'ejemplo-referencia', 'proyecto' );
+
+	if ( $existente ) {
+		return;
+	}
+
+	$id = wp_insert_post( array(
+		'post_type'    => 'proyecto',
+		'post_status'  => 'publish',
+		'post_title'   => __( 'Galpón Forestal León, Coelemu, Chile', 'forestal-leon' ),
+		'post_name'    => 'ejemplo-referencia',
+		'post_excerpt' => __( 'El proyecto Galpón Forestal León nació con el fin de demostrar el potencial del sistema BIM aplicado a la construcción en madera, logrando una estructura firme e imponente, capaz de exponerse a cualquier clima. Levantado en Coelemu entre febrero y marzo de 2026, el galpón alcanzó 1.020 m² de superficie en apenas un mes de ejecución, un plazo notablemente menor al que requeriría un galpón convencional de estructura de acero de dimensiones equivalentes. La obra fue construida en su totalidad por equipo propio de Forestal León: cada pieza fue diseñada y numerada previamente, de modo que el montaje en terreno consistió únicamente en unir las vigas de madera mediante conectores de acero diseñados por Forestal León, y la soldadura de cada pilar a los anclajes de fundación.', 'forestal-leon' ),
+		'post_content' => forestal_leon_contenido_ficha_ejemplo(),
+	) );
+
+	if ( is_wp_error( $id ) || ! $id ) {
+		return;
+	}
+
+	wp_set_object_terms( $id, 'viviendas', 'tipo-proyecto' );
 }
 
 /**

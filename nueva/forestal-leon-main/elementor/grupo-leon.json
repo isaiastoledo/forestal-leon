@@ -1,0 +1,939 @@
+{
+ "version": "0.4",
+ "title": "Grupo León",
+ "type": "page",
+ "content": [
+  {
+   "id": "3e5560",
+   "elType": "container",
+   "settings": {
+    "_title": "Apertura",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#1C3829",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "css_classes": "fl-seccion-oscura"
+   },
+   "elements": [
+    {
+     "id": "5e3556",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "3df893",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Grupo León",
+        "header_size": "p",
+        "title_color": "#C5D9C6",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.2,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3e1782",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Tres empresas, una cadena",
+        "header_size": "h1",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3e3671",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Del vivero a la planta y de la planta a la energía que la mueve. Cada eslabón alimenta al siguiente.</p>",
+        "text_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "3f2de9",
+   "elType": "container",
+   "settings": {
+    "_title": "Las tres empresas",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "5e5445",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "3e744f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Forestal León",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3e933e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>La base del grupo desde el principio. Empezó con aserraderos de montaña y hoy fabrica productos forestales de alto valor agregado con alta tecnología: tableros, madera aserrada, cepillada y encolada.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3eb22d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Energía León",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3ed11c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Planta de energía en la propia base de operaciones. Aprovecha los residuos de la producción para generar energía y vapor: abastece los procesos de Forestal León y a las comunidades aledañas.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3ef00b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Vivero León",
+        "header_size": "h3",
+        "title_color": "#1A1A17",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_margin": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3f0efa",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>En marcha desde 2020. Produce plantas de alta calidad genética para abastecer nuestras plantaciones, con mejores resultados de prendimiento y crecimiento.</p>",
+        "text_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ccf447",
+   "elType": "container",
+   "settings": {
+    "_title": "Contacto",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#ECEBE6"
+   },
+   "elements": [
+    {
+     "id": "cd1336",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "cd3225",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Contacto",
+        "header_size": "h2",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "cd5114",
+       "elType": "container",
+       "settings": {
+        "_title": "Cuatro servicios",
+        "content_width": "full",
+        "flex_direction": "row",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "cd7003",
+         "elType": "container",
+         "settings": {
+          "_title": "Compra de productos",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "cd8ef2",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Compra de productos",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "cdade1",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Cotiza madera aserrada, estructural o laminados.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "cdccd0",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Solicitar cotización",
+            "link": {
+             "url": "/contacto/#compra-de-productos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "cdebbf",
+         "elType": "container",
+         "settings": {
+          "_title": "Construcción e ingeniería",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "ce0aae",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Construcción e ingeniería",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "ce299d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Desarrolla tu proyecto en madera con nosotros.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "ce488c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Desarrollar un proyecto",
+            "link": {
+             "url": "/contacto/#construccion-e-ingenieria",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "ce677b",
+         "elType": "container",
+         "settings": {
+          "_title": "Reclamos y MPD",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "ce866a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Reclamos y MPD",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "cea559",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Canal formal de reclamos y prevención de delitos.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "cec448",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Presentar un caso",
+            "link": {
+             "url": "/contacto/#reclamos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "cee337",
+         "elType": "container",
+         "settings": {
+          "_title": "Contacto general",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "cf0226",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Contacto general",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": []
+          },
+          {
+           "id": "cf2115",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Prensa, alianzas y cualquier otra consulta.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "cf4004",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Escríbenos",
+            "link": {
+             "url": "/contacto/#contacto-general",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

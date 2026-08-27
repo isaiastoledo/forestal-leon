@@ -1,0 +1,1306 @@
+/*
+Theme Name: Forestal León
+Theme URI: https://forestalleon.cl
+Author: ALTURA
+Author URI: https://forestalleon.cl
+Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
+Version: 2.18.0
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: forestal-leon
+Tags: full-site-editing, block-patterns, editor-style, wide-blocks, custom-colors, custom-logo, custom-menu, translation-ready
+*/
+
+/* El vídeo de portada dentro de Elementor.
+
+   Alto igual al de la pantalla, y el iframe se agranda un 30% para que la
+   barra de título y la inferior de YouTube queden fuera del encuadre. Es la
+   única forma fiable de que no se vean: los parámetros del reproductor las
+   atenúan, pero no las eliminan. */
+
+.elementor .fl-hero-video {
+	height: 100vh;
+	max-height: 100vh;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.elementor .fl-hero-video > .e-con-inner,
+.elementor .fl-hero-video .elementor-widget-html,
+.elementor .fl-hero-video .elementor-widget-container {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.elementor .fl-hero-video__iframe {
+	border: 0;
+	height: 73vw;                 /* 130% de 56.25vw */
+	left: 50%;
+	min-height: 130%;
+	min-width: 231vh;            /* 130% de 177.78vh */
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	width: 130vw;
+}
+
+/* Nada de margen encima: la franja blanca tapaba el menú. */
+.fl-hero-superpuesto .elementor,
+.fl-hero-superpuesto .elementor > .e-con:first-child,
+.fl-hero-superpuesto .elementor-widget-container > .fl-hero-video,
+.fl-hero-superpuesto main > *:first-child {
+	margin-block-start: 0;
+	margin-top: 0;
+}
+
+/* En las páginas hechas con Elementor, el tema retira su margen lateral.
+
+   El tema aplica un margen a los lados de todo el contenido del sitio. Eso
+   impedía que un contenedor de Elementor marcado como «ancho completo» llegara
+   de verdad al borde: por muy al 100% que estuviera, el 100% era del hueco ya
+   recortado. Aquí el ancho lo gobierna Elementor, con su propio ajuste de
+   «Ancho del contenido» en Ajustes del sitio. */
+
+body.elementor-page .wp-site-blocks,
+body.elementor-page .wp-site-blocks > main,
+body.elementor-page main.wp-block-group,
+body.elementor-page .entry-content,
+body.elementor-page .wp-block-post-content,
+body.elementor-page .wp-block-post-content > .elementor {
+	margin-block-start: 0;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* La plantilla de página envuelve el contenido en «entry-content», y ese
+   contenedor lleva el contentSize del tema (68 vw). Medido en /empresa/:
+   max-width 870,4 px y margin-left 197 px, con lo que ni un contenedor de
+   Elementor a ancho completo podía pasar de ahí. Inicio se libraba por usar
+   otra plantilla; por eso solo fallaba en el resto de las páginas. */
+
+/* Las franjas a ancho completo alinean su texto con el resto de la página.
+
+   El fondo llega de borde a borde, pero el texto y los botones se detienen en
+   la misma medida que las secciones normales: 1140 px, el ancho de contenido
+   de Elementor (medido en «.e-con-inner»: min(100%, 1140px)). Por debajo de
+   esa anchura queda el margen lateral del sitio.
+
+   El margen se aplica a los textos, no al contenedor. Al ponerlo antes en el
+   contenedor se encogía todo lo que llevara dentro, y las tiras de fotos, que
+   deben ir a sangre, quedaban recortadas igual que el texto.
+
+   Se excluyen dos casos: el vídeo de portada, que va a sangre, y las franjas
+   que ya traen dentro su propio contenedor —las plantillas nuevas lo llevan—,
+   porque si no el margen se aplicaría dos veces. */
+
+body.elementor-page .elementor > .e-con-full:not( .fl-hero-video ):not( :has( > .e-con ) ) > .elementor-widget-heading,
+body.elementor-page .elementor > .e-con-full:not( .fl-hero-video ):not( :has( > .e-con ) ) > .elementor-widget-text-editor,
+body.elementor-page .elementor > .e-con-full:not( .fl-hero-video ):not( :has( > .e-con ) ) > .elementor-widget-button,
+body.elementor-page .elementor > .e-con-full:not( .fl-hero-video ):not( :has( > .e-con ) ) > .elementor-widget-icon-list {
+	margin-inline: auto;
+	max-width: min( calc( 100% - 2 * var( --wp--custom--contenedor--padding ) ), 1140px );
+	width: 100%;
+}
+
+/* El título de la página lo pone Elementor, no el tema.
+
+   La plantilla del tema imprime el título del contenido (post-title) y la
+   imagen destacada encima de todo. En las páginas de Elementor eso salía como
+   un título negro suelto sobre la primera sección —«Grupo León», «Quiénes
+   Somos»— duplicando el titular que ya trae el diseño.
+
+   Se oculta solo cuando la página está hecha con Elementor. Las páginas que
+   siguen montadas con bloques (aviso legal, privacidad, resultados de
+   búsqueda) conservan su título. */
+
+body.elementor-page > .wp-site-blocks .wp-block-post-title,
+body.elementor-page > .wp-site-blocks .wp-block-post-featured-image {
+	display: none;
+}
+
+/* Sin el título encima, el hueco superior que dejaba la plantilla sobra.
+   Lleva «!important» porque la plantilla escribe ese relleno como estilo en
+   línea sobre el propio «main», y sin él no hay hoja de estilos que gane.
+   Medido: la primera sección pasa a empezar justo donde acaba la cabecera. */
+body.elementor-page .wp-site-blocks > main.wp-block-group {
+	padding-top: 0 !important;
+}
+
+/* La cabecera y el pie sí conservan su margen: los sigue montando el tema. */
+body.elementor-page header.wp-block-template-part > .fl-cabecera,
+body.elementor-page footer.wp-block-template-part > .wp-block-group {
+	padding-left: var( --wp--custom--contenedor--padding );
+	padding-right: var( --wp--custom--contenedor--padding );
+}
+
+/* ==========================================================================
+   Elementor
+
+   Las páginas se construyen con Elementor, pero el estilo de los botones lo
+   fija el tema. Motivo: el ajuste por widget depende de la configuración global
+   de Elementor y no siempre gana; así el botón sale igual en las nueve páginas
+   sin tener que tocarlo uno a uno.
+   ========================================================================== */
+
+.elementor-widget-button .elementor-button {
+	background-color: transparent;
+	border: 1px solid var( --wp--preset--color--primary );
+	border-radius: 0;
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--texto );
+	font-size: var( --wp--preset--font-size--medium );
+	font-weight: 400;
+	padding: 1.125rem 2rem;
+	transition:
+		background-color var( --wp--custom--transicion--rapida ),
+		color var( --wp--custom--transicion--rapida );
+}
+
+.elementor-widget-button .elementor-button:hover,
+.elementor-widget-button .elementor-button:focus {
+	background-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+}
+
+/* Sobre fondo oscuro o fotografía, el botón va en blanco. */
+.fl-seccion-oscura .elementor-button {
+	border-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--base );
+}
+
+.fl-seccion-oscura .elementor-button:hover,
+.fl-seccion-oscura .elementor-button:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--ink );
+}
+
+/* Los enlaces de las tarjetas de servicio no llevan caja. */
+.elementor-widget-button .elementor-button[ class*="elementor-button-link" ],
+.elementor-widget-button.fl-enlace .elementor-button {
+	border: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   1. Familia condensada
+   Google descontinuó "Open Sans Condensed". Su reemplazo oficial es la
+   variable Open Sans con el eje de ancho (wdth). Cargamos esa variable una
+   sola vez (functions.php) y activamos el ancho condensado con font-stretch.
+   ========================================================================== */
+
+h1, h2, h3, h4,
+.has-condensada-font-family,
+.wp-block-site-title,
+.wp-block-post-title,
+.wp-block-navigation,
+.wp-block-quote {
+	font-stretch: var( --wp--custom--condensada--stretch, 75% );
+}
+
+@supports not ( font-variation-settings: normal ) {
+	h1, h2, h3, h4,
+	.has-condensada-font-family,
+	.wp-block-site-title,
+	.wp-block-post-title {
+		font-family: "Open Sans Condensed", "Arial Narrow", sans-serif;
+	}
+}
+
+/* ==========================================================================
+   2. Logotipo
+   El isotipo es apaisado (1878×612, ratio ~3:1). Se fija por altura para que
+   no baile entre la cabecera y el pie.
+   ========================================================================== */
+
+.wp-block-site-logo img {
+	height: var( --wp--custom--logo--alto );
+	width: auto;
+}
+
+@media ( max-width: 600px ) {
+	.wp-block-site-logo img {
+		height: var( --wp--custom--logo--alto-movil );
+	}
+}
+
+/* Versión blanca: se usa sobre el pie verde y sobre imágenes oscuras.
+   El filtro evita tener que mantener dos archivos sincronizados; en
+   /assets/images/ viaja además un PNG blanco por si se prefiere usarlo. */
+.logo-blanco img,
+.is-style-logo-blanco img {
+	filter: brightness( 0 ) invert( 1 );
+}
+
+/* ==========================================================================
+   3. Transiciones — escala en potencias de 2 (128 / 256 ms)
+   ========================================================================== */
+
+a,
+.wp-element-button,
+.wp-block-button__link,
+.wp-block-navigation-item__content {
+	transition:
+		color var( --wp--custom--transicion--rapida ),
+		background-color var( --wp--custom--transicion--rapida ),
+		border-color var( --wp--custom--transicion--rapida ),
+		opacity var( --wp--custom--transicion--base );
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
+
+/* ==========================================================================
+   4. Accesibilidad — foco visible
+   ========================================================================== */
+
+:where( a, button, input, select, textarea, [tabindex] ):focus-visible {
+	outline: 2px solid var( --wp--preset--color--primary );
+	outline-offset: 2px;
+}
+
+.skip-link:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--primary );
+	padding: 0.75rem 1.5rem;
+	z-index: 100000;
+}
+
+/* ==========================================================================
+   5. Estilos de bloque registrados (functions.php)
+   ========================================================================== */
+
+/* Botón sólido: relleno Verde León, texto blanco. Invierte al hover. */
+.wp-block-button.is-style-solido .wp-block-button__link {
+	background-color: var( --wp--preset--color--primary );
+	border-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+}
+
+.wp-block-button.is-style-solido .wp-block-button__link:hover,
+.wp-block-button.is-style-solido .wp-block-button__link:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--primary );
+}
+
+/* Botón sobre imagen o fondo oscuro. */
+.wp-block-button.is-style-sobre-oscuro .wp-block-button__link {
+	background-color: transparent;
+	border-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--base );
+}
+
+.wp-block-button.is-style-sobre-oscuro .wp-block-button__link:hover,
+.wp-block-button.is-style-sobre-oscuro .wp-block-button__link:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--ink );
+}
+
+/* ==========================================================================
+   2 bis. Cabecera
+   ========================================================================== */
+
+/*
+ * La cabecera acompaña al visitante en todo el sitio.
+ *
+ * En las páginas interiores basta con sticky: la cabecera ocupa su sitio en el
+ * flujo y se queda pegada arriba al hacer scroll, sin necesidad de compensar
+ * ninguna altura.
+ */
+header.wp-block-template-part {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+}
+
+/* --------------------------------------------------------------------------
+   Portada: el vídeo tiene que empezar en el borde superior.
+
+   WordPress añade un margen automático encima del primer bloque del contenido.
+   Ahí dejaba una franja blanca que además tapaba parte del menú, porque la
+   cabecera va encima. Se anula solo en la portada.
+   -------------------------------------------------------------------------- */
+
+.fl-hero-superpuesto .wp-site-blocks > main,
+.fl-hero-superpuesto .wp-block-post-content,
+.fl-hero-superpuesto .wp-block-post-content > *:first-child,
+.fl-hero-superpuesto .fl-hero-video {
+	margin-block-start: 0;
+	margin-top: 0;
+}
+
+/* Los anclas (#energia-leon, #reclamos…) no deben quedar bajo la cabecera. */
+html {
+	scroll-padding-top: 7rem;
+}
+
+/* --------------------------------------------------------------------------
+   Navegación principal y mega menú de Productos.
+
+   El menú es marcado propio (bloque HTML dentro de la cabecera) y no el bloque
+   Navegación de WordPress. Motivo: el bloque nativo solo sabe hacer desplegables
+   de una columna, y aquí hace falta un panel de tres. A cambio, el menú se edita
+   en Apariencia › Editor › Patrones › Cabecera, no en Apariencia › Menús.
+   -------------------------------------------------------------------------- */
+
+.screen-reader-text {
+	clip-path: inset( 50% );
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.fl-nav__lista {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var( --wp--preset--spacing--30 );
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Sin position:relative a propósito: el panel se mide contra .fl-cabecera,
+   para poder ocupar todo el ancho como en la referencia. */
+.fl-nav__item {
+	margin: 0;
+}
+
+.fl-nav a {
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--condensada );
+	font-size: var( --wp--preset--font-size--small );
+	font-stretch: 75%;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.fl-nav a:hover {
+	color: var( --wp--preset--color--primary-dark );
+}
+
+/* El elemento Productos y su flecha van juntos. */
+.fl-nav__item--mega {
+	align-items: center;
+	display: flex;
+	gap: 0.35rem;
+}
+
+.fl-nav__desplegar {
+	background: none;
+	border: 0;
+	color: inherit;
+	cursor: pointer;
+	display: inline-flex;
+	line-height: 0;
+	padding: 0.25rem;
+	transition: transform var( --wp--custom--transicion--rapida );
+}
+
+.fl-nav__desplegar[ aria-expanded="true" ] {
+	transform: rotate( 180deg );
+}
+
+/* Selector de idioma.
+   Los textos en inglés los traduce el cliente. Hasta que haya un plugin de
+   traducción instalado (Polylang o similar), /en/ no existe: el conmutador
+   está montado pero el enlace no lleva a ninguna parte todavía. */
+.fl-nav__item--idioma {
+	align-items: center;
+	color: var( --wp--preset--color--contrast-mid );
+	display: flex;
+	font-family: var( --wp--preset--font-family--condensada );
+	font-size: var( --wp--preset--font-size--x-small );
+	font-stretch: 75%;
+	gap: 0.3rem;
+}
+
+.fl-nav__item--idioma a {
+	font-size: var( --wp--preset--font-size--x-small );
+}
+
+.fl-nav__item--idioma a[ aria-current="true" ] {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+/* Redes sociales del pie. Abren en pestaña nueva, como pidió el cliente. */
+.fl-redes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var( --wp--preset--spacing--20 );
+	list-style: none;
+	margin: var( --wp--preset--spacing--30 ) 0 0;
+	padding: 0;
+}
+
+.fl-redes a {
+	color: var( --wp--preset--color--base );
+	font-size: var( --wp--preset--font-size--small );
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.fl-redes a:hover {
+	text-decoration: underline;
+}
+
+/* Botón Cotizar. */
+.fl-nav__item--cta a {
+	background-color: var( --wp--preset--color--primary );
+	border: 1px solid var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+	display: inline-block;
+	padding: 0.7rem 1.1rem;
+	transition:
+		background-color var( --wp--custom--transicion--rapida ),
+		color var( --wp--custom--transicion--rapida );
+}
+
+.fl-nav__item--cta a:hover {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--primary );
+}
+
+/* --- El panel ----------------------------------------------------------- */
+
+.fl-mega {
+	background-color: var( --wp--preset--color--base );
+	border-top: 1px solid var( --wp--preset--color--border );
+	box-shadow: 0 12px 40px rgba( 26, 26, 23, 0.12 );
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 30;
+}
+
+.fl-mega[ hidden ] {
+	display: none;
+}
+
+.fl-mega__interior {
+	display: grid;
+	gap: var( --wp--preset--spacing--50 );
+	grid-template-columns: repeat( 3, 1fr );
+	margin-inline: auto;
+	max-width: 1600px;
+	padding: var( --wp--preset--spacing--50 ) var( --wp--custom--contenedor--padding );
+}
+
+/* Panel de dos columnas, para el menú de Construcción en madera. */
+.fl-mega__interior--dos {
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	max-width: 860px;
+	margin-inline: auto;
+}
+
+/* Panel de una columna, para Productos.
+
+   Solo se ofrecen las tres familias como destino; los productos concretos son
+   secciones dentro de cada una. Con un enlace por columna, la retícula de tres
+   dejaba el panel vacío de lado a lado, así que se apilan. */
+.fl-mega__interior--una {
+	grid-template-columns: minmax( 0, 1fr );
+	margin-inline: auto;
+	max-width: 420px;
+}
+
+.fl-mega__interior--una .fl-mega__titulo + .fl-mega__titulo {
+	margin-top: var( --wp--preset--spacing--20 );
+}
+
+.fl-mega__interior--una .fl-mega__titulo:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+@media ( max-width: 1023px ) {
+	.fl-mega__interior--dos,
+	.fl-mega__interior--una {
+		grid-template-columns: 1fr;
+		max-width: none;
+	}
+}
+
+.fl-mega__titulo {
+	border-bottom: 1px solid var( --wp--preset--color--border );
+	display: block;
+	font-size: var( --wp--preset--font-size--large ) !important;
+	padding-bottom: var( --wp--preset--spacing--20 );
+}
+
+.fl-mega ul {
+	list-style: none;
+	margin: var( --wp--preset--spacing--20 ) 0 0;
+	padding: 0;
+}
+
+.fl-mega li + li {
+	margin-top: 0.55rem;
+}
+
+/* Los productos van en texto normal, no en versalitas: son nombres, no rótulos. */
+.fl-mega li a {
+	color: var( --wp--preset--color--contrast );
+	font-family: var( --wp--preset--font-family--texto );
+	font-size: var( --wp--preset--font-size--small );
+	font-stretch: 100%;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.fl-mega li a:hover {
+	color: var( --wp--preset--color--primary );
+}
+
+/* --- Móvil -------------------------------------------------------------- */
+
+.fl-nav__hamburguesa {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	display: none;
+	height: 44px;
+	padding: 0;
+	width: 44px;
+}
+
+.fl-nav__barras,
+.fl-nav__barras::before,
+.fl-nav__barras::after {
+	background-color: currentColor;
+	display: block;
+	height: 2px;
+	transition: transform var( --wp--custom--transicion--rapida );
+	width: 24px;
+}
+
+.fl-nav__barras {
+	margin-inline: auto;
+	position: relative;
+}
+
+.fl-nav__barras::before,
+.fl-nav__barras::after {
+	content: "";
+	position: absolute;
+}
+
+.fl-nav__barras::before { top: -7px; }
+.fl-nav__barras::after  { top: 7px; }
+
+.fl-nav__hamburguesa[ aria-expanded="true" ] .fl-nav__barras {
+	background-color: transparent;
+}
+
+.fl-nav__hamburguesa[ aria-expanded="true" ] .fl-nav__barras::before {
+	transform: translateY( 7px ) rotate( 45deg );
+}
+
+.fl-nav__hamburguesa[ aria-expanded="true" ] .fl-nav__barras::after {
+	transform: translateY( -7px ) rotate( -45deg );
+}
+
+@media ( max-width: 1023px ) {
+	.fl-nav__hamburguesa {
+		color: var( --wp--preset--color--primary );
+		display: block;
+	}
+
+	.fl-nav__lista {
+		background-color: var( --wp--preset--color--base );
+		border-top: 1px solid var( --wp--preset--color--border );
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var( --wp--preset--spacing--20 );
+		left: 0;
+		padding: var( --wp--preset--spacing--40 ) var( --wp--custom--contenedor--padding );
+		position: absolute;
+		right: 0;
+		top: 100%;
+		z-index: 30;
+	}
+
+	.fl-nav__lista.esta-abierto {
+		display: flex;
+	}
+
+	/* Dentro del móvil el panel deja de flotar y se despliega en vertical. */
+	.fl-mega {
+		border-top: 0;
+		box-shadow: none;
+		position: static;
+	}
+
+	.fl-mega__interior {
+		grid-template-columns: 1fr;
+		gap: var( --wp--preset--spacing--30 );
+		padding: var( --wp--preset--spacing--20 ) 0 0;
+	}
+}
+
+.fl-cabecera {
+	background-color: var( --wp--preset--color--base );
+	border-bottom: 1px solid var( --wp--preset--color--border );
+	position: relative;
+	transition:
+		background-color var( --wp--custom--transicion--base ),
+		border-color var( --wp--custom--transicion--base ),
+		box-shadow var( --wp--custom--transicion--base );
+}
+
+/*
+ * Portada: la cabecera flota sobre la imagen de apertura, así que sale del
+ * flujo y pasa a fixed. Empieza transparente con el logotipo y el menú en
+ * blanco; el script de assets/js/cabecera.js le añade .fl-cabecera--solida en
+ * cuanto se hace scroll y entonces se vuelve blanca con las letras en verde.
+ */
+.fl-hero-superpuesto > .wp-site-blocks > header.wp-block-template-part {
+	inset-inline: 0;
+	margin-inline: auto;
+	max-width: var( --wp--custom--contenedor--max );
+	position: fixed;
+	top: 0;
+}
+
+.fl-hero-superpuesto .fl-cabecera {
+	background-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.fl-hero-superpuesto .fl-cabecera .fl-nav a,
+.fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
+	color: var( --wp--preset--color--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera .fl-nav a:hover,
+.fl-hero-superpuesto .fl-cabecera .wp-block-site-title a:hover {
+	color: var( --wp--preset--color--sage-pale );
+}
+
+.fl-hero-superpuesto .fl-cabecera .wp-block-site-logo img {
+	filter: brightness( 0 ) invert( 1 );
+	transition: filter var( --wp--custom--transicion--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera .fl-nav__item--cta a {
+	background-color: transparent;
+	border-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera .fl-nav__item--cta a:hover,
+.fl-hero-superpuesto .fl-cabecera .fl-nav__item--cta a:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--ink );
+}
+
+/* Sin JavaScript la cabecera se queda transparente: una sombra de texto
+   discreta garantiza que el menú se lea también sobre fotos claras. */
+html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .fl-nav a,
+html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
+	text-shadow: 0 1px 3px rgba( 0, 0, 0, 0.55 );
+}
+
+/* --- Estado sólido: al hacer scroll ------------------------------------- */
+
+.fl-hero-superpuesto .fl-cabecera--solida {
+	background-color: var( --wp--preset--color--base );
+	border-bottom-color: var( --wp--preset--color--border );
+	box-shadow: 0 1px 2px rgba( 26, 26, 23, 0.06 );
+}
+
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav a,
+.fl-hero-superpuesto .fl-cabecera--solida .wp-block-site-title a {
+	color: var( --wp--preset--color--primary );
+	text-shadow: none;
+}
+
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav a:hover,
+.fl-hero-superpuesto .fl-cabecera--solida .wp-block-site-title a:hover {
+	color: var( --wp--preset--color--primary-dark );
+}
+
+/* El logotipo vuelve a su verde original: basta con quitarle el filtro. */
+.fl-hero-superpuesto .fl-cabecera--solida .wp-block-site-logo img {
+	filter: none;
+}
+
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav__item--cta a {
+	background-color: var( --wp--preset--color--primary );
+	border-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav__item--cta a:hover,
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav__item--cta a:focus {
+	background-color: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--primary );
+}
+
+/* El menú desplegable de móvil siempre va sobre fondo sólido. */
+.fl-hero-superpuesto .fl-cabecera .fl-nav__lista.esta-abierto {
+	background-color: var( --wp--preset--color--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera .fl-nav__lista.esta-abierto a {
+	color: var( --wp--preset--color--primary );
+	text-shadow: none;
+}
+
+/* La hamburguesa sigue el mismo estado que el resto de la cabecera. */
+.fl-hero-superpuesto .fl-cabecera .fl-nav__hamburguesa,
+.fl-hero-superpuesto .fl-cabecera .fl-nav__desplegar {
+	color: var( --wp--preset--color--base );
+}
+
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav__hamburguesa,
+.fl-hero-superpuesto .fl-cabecera--solida .fl-nav__desplegar {
+	color: var( --wp--preset--color--primary );
+}
+
+/* Con el panel abierto la cabecera necesita fondo, aunque no se haya hecho scroll. */
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto {
+	background-color: var( --wp--preset--color--base );
+	border-bottom-color: var( --wp--preset--color--border );
+}
+
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto .fl-nav a,
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto .fl-nav__hamburguesa,
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto .fl-nav__desplegar {
+	color: var( --wp--preset--color--primary );
+	text-shadow: none;
+}
+
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto .wp-block-site-logo img {
+	filter: none;
+}
+
+.fl-hero-superpuesto .fl-cabecera.tiene-panel-abierto .fl-nav__item--cta a {
+	background-color: var( --wp--preset--color--primary );
+	border-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+}
+
+/* --------------------------------------------------------------------------
+   Par de titulares de sección.
+   Es el gesto que más define la portada del sitio de referencia: un título
+   grande en verde y mayúsculas SIN condensar, y justo debajo un subtítulo
+   condensado en gris. Van juntos, en ese orden.
+   -------------------------------------------------------------------------- */
+
+.is-style-titulo-seccion {
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--texto );
+	font-size: clamp( 2.25rem, 6vw, 4.75rem );
+	font-stretch: 100%;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.1;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.is-style-subtitulo-seccion {
+	color: var( --wp--preset--color--contrast );
+	font-family: var( --wp--preset--font-family--condensada );
+	font-size: clamp( 1.625rem, 4.2vw, 2.875rem );
+	font-stretch: 75%;
+	font-weight: 400;
+	line-height: 1.05;
+	margin-top: var( --wp--preset--spacing--10 );
+}
+
+/* --------------------------------------------------------------------------
+   Bloques a ancho completo dentro del contenido de una página.
+
+   El hero y las bandas de imagen declaran «ancho completo», pero al vivir
+   dentro del contenido de la página quedaban limitados por la columna de
+   lectura. Esto los libera: se salen del contenedor y del margen lateral,
+   sin pasarse del ancho máximo del sitio.
+   -------------------------------------------------------------------------- */
+
+.wp-block-post-content .alignfull {
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	max-width: none;
+	width: auto;
+}
+
+/* Lo que va dentro de esas bandas sí vuelve a la columna de lectura. */
+.wp-block-post-content .alignfull > .wp-block-group__inner-container,
+.wp-block-post-content .alignfull > .wp-block-cover__inner-container {
+	margin-inline: auto;
+	max-width: var( --wp--style--global--content-size );
+	padding-inline: var( --wp--custom--contenedor--padding );
+}
+
+/* El hero no lleva texto: que la imagen ocupe todo sin recuadrar. */
+.wp-block-post-content .fl-hero-video {
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	max-width: none;
+	width: auto;
+}
+
+/* Lo mismo, pero dentro del editor.
+   El editor no envuelve el contenido en .wp-block-post-content, así que la
+   regla de arriba no le llega y los bloques a ancho completo se quedaban
+   encajonados mientras editabas, aunque en la web salieran bien. */
+
+.editor-styles-wrapper .alignfull,
+.block-editor-block-list__layout .alignfull {
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	max-width: none;
+	width: auto;
+}
+
+.editor-styles-wrapper .fl-hero-video,
+.block-editor-block-list__layout .fl-hero-video {
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	max-width: none;
+	width: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Portada con vídeo a sangre.
+
+   El iframe de YouTube se escala para cubrir la franja completa sin barras
+   negras: 100vw de ancho con altura 16:9, o 100% de alto con anchura 16:9,
+   lo que sea mayor. Va centrado y sin interacción — es decoración, no un
+   reproductor: por eso lleva pointer-events:none, aria-hidden y tabindex -1.
+   -------------------------------------------------------------------------- */
+
+.fl-hero-video {
+	background-color: var( --wp--preset--color--ink );
+	height: 776px;
+	max-height: 82vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.fl-hero-video__iframe {
+	border: 0;
+	height: 56.25vw;          /* 100vw en 16:9 */
+	left: 50%;
+	min-height: 100%;
+	min-width: 177.78vh;      /* 100vh en 16:9 */
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translate( -50%, -50% );
+	width: 100vw;
+}
+
+/* Velo: da contraste al menú blanco de la cabecera y remata la franja. */
+.fl-hero-video::after {
+	background: linear-gradient(
+		180deg,
+		rgba( 26, 26, 23, 0.4 ) 0%,
+		rgba( 26, 26, 23, 0.12 ) 38%,
+		rgba( 26, 26, 23, 0.5 ) 100%
+	);
+	content: "";
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
+}
+
+@media ( max-width: 700px ) {
+	.fl-hero-video {
+		height: 62vh;
+	}
+}
+
+/* --------------------------------------------------------------------------
+   Banda de imagen a sangre.
+   Fotografía a todo lo ancho, velo oscuro, un titular condensado en blanco,
+   un párrafo a la izquierda y el botón "Más" alineado a la derecha.
+   -------------------------------------------------------------------------- */
+
+.fl-banda {
+	min-height: clamp( 380px, 55vh, 620px );
+}
+
+.fl-banda .fl-banda__texto {
+	max-width: 62ch;
+}
+
+.fl-banda .wp-block-buttons {
+	justify-content: flex-end;
+}
+
+@media ( max-width: 700px ) {
+	.fl-banda .wp-block-buttons {
+		justify-content: flex-start;
+	}
+}
+
+/* --------------------------------------------------------------------------
+   Mosaicos de servicio: cuatro accesos con borde, sin relleno.
+   -------------------------------------------------------------------------- */
+
+.fl-tile {
+	border: 1px solid var( --wp--preset--color--border );
+	display: block;
+	min-height: 190px;
+	text-decoration: none;
+	transition: border-color var( --wp--custom--transicion--rapida ),
+		background-color var( --wp--custom--transicion--rapida );
+}
+
+.fl-tile:hover,
+.fl-tile:focus-within {
+	background-color: var( --wp--preset--color--base-alt );
+	border-color: var( --wp--preset--color--primary );
+}
+
+/* Antetítulo: la etiqueta corta en versalitas verdes sobre un titular. */
+.is-style-antetitulo {
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--texto );
+	font-size: var( --wp--preset--font-size--small );
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	line-height: 1.4;
+	margin-bottom: var( --wp--preset--spacing--10 );
+	text-transform: uppercase;
+}
+
+/* Entradilla: párrafo de entrada, un punto más grande. */
+.is-style-entradilla {
+	font-size: var( --wp--preset--font-size--x-large );
+	line-height: 1.6;
+}
+
+/* Ficha de proyecto: el texto introductorio es un párrafo largo, no una
+   entradilla breve, así que va más pequeño y justificado. No toca las demás
+   entradillas del sitio (producto, artículo, empresa…), que siguen igual. */
+.single-proyecto .is-style-entradilla {
+	font-size: calc( var( --wp--preset--font-size--large ) * 0.8 );
+	text-align: justify;
+}
+
+/* Grupo con filete verde superior. */
+.is-style-filete-verde {
+	border-top: 2px solid var( --wp--preset--color--primary );
+	padding-top: var( --wp--preset--spacing--30 );
+}
+
+/* Portada con velo inferior, para legibilidad sobre fotografía. */
+.wp-block-cover.is-style-velo-inferior .wp-block-cover__background {
+	background: linear-gradient( 180deg, rgba( 26, 26, 23, 0 ) 0%, rgba( 26, 26, 23, 0.7 ) 100% );
+	opacity: 1;
+}
+
+/* Cifra destacada: los "+50 años", "3.000 ha", "12+ países" del kit. */
+.is-style-cifra {
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--condensada );
+	font-size: var( --wp--preset--font-size--display );
+	font-stretch: 75%;
+	line-height: 1;
+}
+
+/* Etiqueta / tag: FSC®, Pino Radiata, Exportación… */
+.is-style-etiqueta {
+	background-color: var( --wp--preset--color--sage-pale );
+	color: var( --wp--preset--color--forest-deep );
+	display: inline-block;
+	font-size: var( --wp--preset--font-size--x-small );
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	padding: 0.35rem 0.75rem;
+	text-transform: uppercase;
+}
+
+/* ==========================================================================
+   6. Acento madera
+   Wood (#C4832A) tiene 3.17:1 sobre blanco: NO cumple AA para texto normal.
+   Se usa solo como superficie o filete. Para texto sobre blanco existe
+   wood-text (#A16B22, 4.52:1). Ver DESIGN-SYSTEM.md, sección 1.
+   ========================================================================== */
+
+.has-wood-color:not( .has-background ) {
+	/* Si alguien pinta texto suelto en Wood, lo corregimos al tono legible. */
+	color: var( --wp--preset--color--wood-text );
+}
+
+.is-style-filete-madera {
+	border-top: 3px solid var( --wp--preset--color--wood );
+	padding-top: var( --wp--preset--spacing--30 );
+}
+
+/* Lista sin viñetas — se usa en las columnas del pie. */
+.wp-block-list.is-style-lista-limpia {
+	list-style: none;
+	padding-left: 0;
+}
+
+.wp-block-list.is-style-lista-limpia li {
+	margin: 0;
+}
+
+/* ==========================================================================
+   7. Detalles de composición
+   ========================================================================== */
+
+img,
+figure img {
+	height: auto;
+	max-width: 100%;
+}
+
+.wp-site-blocks {
+	margin-inline: auto;
+	max-width: var( --wp--custom--contenedor--max );
+}
+
+.wp-block-table table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+	border: 1px solid var( --wp--preset--color--border );
+	padding: 0.75rem 1rem;
+	text-align: left;
+}
+
+.wp-block-table thead th {
+	background-color: var( --wp--preset--color--base-alt );
+	font-family: var( --wp--preset--font-family--texto );
+	font-weight: 700;
+}
+
+.wp-block-navigation .wp-block-navigation-submenu__submenu-container {
+	background-color: var( --wp--preset--color--base );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: 0;
+}
+
+/* ==========================================================================
+   Rejilla de noticias — shortcode [noticias_forestal]
+
+   Formato de tarjeta pedido por el cliente: foto, fecha, titular, entradilla y
+   enlace «más información». En horizontal, tres o cuatro, sin carrusel y sin
+   flechas de navegación.
+   ========================================================================== */
+
+.fl-noticias {
+	display: grid;
+	gap: var( --wp--preset--spacing--40 );
+	grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
+}
+
+.fl-noticias--4 {
+	grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+}
+
+@media ( max-width: 1023px ) {
+	.fl-noticias,
+	.fl-noticias--4 {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+}
+
+@media ( max-width: 599px ) {
+	.fl-noticias,
+	.fl-noticias--4 {
+		grid-template-columns: minmax( 0, 1fr );
+	}
+}
+
+.fl-noticia {
+	background-color: var( --wp--preset--color--base );
+	box-shadow: 0 2px 14px rgba( 26, 26, 23, 0.07 );
+	display: flex;
+	flex-direction: column;
+}
+
+.fl-noticia__foto {
+	display: block;
+	overflow: hidden;
+}
+
+.fl-noticia__foto img {
+	aspect-ratio: 4 / 3;
+	display: block;
+	height: auto;
+	object-fit: cover;
+	transition: transform var( --wp--custom--transicion--base );
+	width: 100%;
+}
+
+.fl-noticia:hover .fl-noticia__foto img {
+	transform: scale( 1.03 );
+}
+
+.fl-noticia__cuerpo {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: var( --wp--preset--spacing--40 );
+}
+
+.fl-noticia__fecha {
+	color: var( --wp--preset--color--contrast-mid );
+	font-size: var( --wp--preset--font-size--small );
+	margin: 0 0 0.5rem;
+}
+
+.fl-noticia__titulo {
+	font-size: var( --wp--preset--font-size--heading-s );
+	font-weight: 400;
+	line-height: 1.25;
+	margin: 0 0 0.75rem;
+}
+
+.fl-noticia__titulo a {
+	color: var( --wp--preset--color--primary );
+	text-decoration: none;
+}
+
+.fl-noticia__titulo a:hover {
+	text-decoration: underline;
+}
+
+.fl-noticia__extracto {
+	color: var( --wp--preset--color--contrast );
+	font-size: var( --wp--preset--font-size--small );
+	line-height: 1.7;
+	margin: 0 0 var( --wp--preset--spacing--30 );
+}
+
+/* El enlace se ancla abajo para que las tarjetas queden alineadas entre sí
+   aunque los titulares tengan distinto número de líneas. */
+.fl-noticia__mas {
+	margin: auto 0 0;
+}
+
+.fl-noticia__mas a {
+	border-bottom: 1px solid currentColor;
+	color: var( --wp--preset--color--ink );
+	font-size: var( --wp--preset--font-size--small );
+	font-weight: 700;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+.fl-noticia__mas a:hover {
+	color: var( --wp--preset--color--primary );
+}
+
+.fl-noticias__vacio {
+	color: var( --wp--preset--color--contrast-mid );
+	font-style: italic;
+}
+
+/* ==========================================================================
+   Tiras de fotos con más altura
+
+   El cliente pidió más alto en la fila de tres de Quiénes Somos: de ancho ya
+   estaban bien. Medido en /empresa/: 310 × 174 px, es decir 16:9. Con 3:2
+   pasan a 310 × 206, un 18% más altas, que es el «un poco» que se pedía.
+
+   Se cubren las dos formas de montarlas: la galería de WordPress —que es como
+   están puestas hoy en la página— y los widgets de imagen de Elementor, para
+   las tiras que vengan de mis plantillas.
+   ========================================================================== */
+
+body.elementor-page .gallery-item img,
+body.elementor-page .fl-fotos-altas .elementor-widget-image img {
+	aspect-ratio: 3 / 2;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Rejilla de referencias
+
+   Formato pedido: ficha cuadrada con la foto y, debajo, nombre del proyecto y
+   país. Binderholz las monta con alturas distintas; aquí van todas iguales,
+   que es lo que se pidió: el recorte cuadrado se encarga de que da igual la
+   proporción con que suban cada fotografía.
+   ========================================================================== */
+
+.fl-referencias .elementor-widget-image img {
+	aspect-ratio: 1 / 1;
+	display: block;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+.fl-referencias .elementor-widget-image {
+	overflow: hidden;
+}
+
+.fl-referencias .elementor-widget-image img {
+	transition: transform var( --wp--custom--transicion--base );
+}
+
+.fl-referencias > .e-con:hover .elementor-widget-image img {
+	transform: scale( 1.04 );
+}
+
+/* ==========================================================================
+   Cuadros de ventajas técnicas
+
+   La foto se recorta en 3:2 para que los once cuadros queden a la misma altura
+   aunque las fotografías originales tengan proporciones distintas.
+   ========================================================================== */
+
+.fl-ventajas .elementor-widget-image img {
+	aspect-ratio: 3 / 2;
+	display: block;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Sin desbordamiento lateral en las páginas de Elementor
+
+   Más arriba, «.wp-block-post-content .fl-hero-video» y «.alignfull» llevan un
+   margen negativo igual al margen lateral del sitio: era la forma de sacar una
+   banda a sangre cuando el contenido iba encajonado, en la época del tema de
+   bloques.
+
+   En Elementor ese margen lateral ya se retira, así que el negativo no tenía
+   nada que compensar y empujaba la sección fuera de la pantalla. Medido a
+   929 px de ancho: el hero salía 1004,5 px, con −37,76 px por lado (4vw), y
+   aparecía la barra de desplazamiento horizontal.
+   ========================================================================== */
+
+body.elementor-page .wp-block-post-content .fl-hero-video,
+body.elementor-page .wp-block-post-content .alignfull {
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+}

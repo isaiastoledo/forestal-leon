@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-antetitulo"} -->
+<p class="is-style-antetitulo">Catálogo</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1,"fontSize":"heading-l"} -->
+<h1 class="wp-block-heading has-heading-l-font-size">Productos</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"is-style-entradilla"} -->
+<p class="is-style-entradilla">Madera aserrada, madera estructural y laminados. Cada ficha incluye escuadrías, calidades y usos recomendados.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-filete-verde","layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+<div class="wp-block-group is-style-filete-verde"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/madera-aserrada">Madera aserrada</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/plywood">Madera estructural</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/laminado">Laminado</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":0,"query":{"perPage":24,"pages":0,"offset":0,"postType":"producto","order":"asc","orderBy":"title","inherit":true},"layout":{"type":"default"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2"} /-->
+
+<!-- wp:post-terms {"term":"familia-producto","className":"is-style-antetitulo","fontSize":"small"} /-->
+
+<!-- wp:post-title {"isLink":true,"fontSize":"heading-s"} /-->
+
+<!-- wp:post-excerpt {"excerptLength":22,"fontSize":"small"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Todavía no hay productos publicados. Añádelos en Productos › Añadir producto y asígnales una familia.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:pattern {"slug":"forestal-leon/cta-cotizar"} /-->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -382,6 +382,11 @@
          "isInner": true,
          "settings": {
           "_title": "Escuela rural",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -455,6 +460,11 @@
          "isInner": true,
          "settings": {
           "_title": "Lodge turístico",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -528,6 +538,11 @@
          "isInner": true,
          "settings": {
           "_title": "Gimnasio municipal",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -601,6 +616,11 @@
          "isInner": true,
          "settings": {
           "_title": "Vivienda unifamiliar",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -674,6 +694,11 @@
          "isInner": true,
          "settings": {
           "_title": "Galpón industrial",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {
@@ -747,6 +772,11 @@
          "isInner": true,
          "settings": {
           "_title": "Ampliación de edificio",
+          "link": {
+           "url": "/proyectos/ejemplo-referencia",
+           "is_external": "",
+           "nofollow": ""
+          },
           "content_width": "full",
           "flex_direction": "column",
           "width": {

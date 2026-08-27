@@ -1,0 +1,1761 @@
+{
+ "version": "0.4",
+ "title": "Viviendas — Forestal León",
+ "type": "page",
+ "content": [
+  {
+   "id": "000007",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Portada",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+   },
+   "elements": [
+    {
+     "id": "000006",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 1312,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "000001",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Construcción en madera",
+        "header_size": "p",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.15,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.2,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "000002",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Viviendas",
+        "header_size": "h1",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 62,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 43,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 31,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": []
+      },
+      {
+       "id": "000003",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Construcción de viviendas unifamiliares en madera",
+        "header_size": "h2",
+        "title_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.25,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "000004",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Entradilla",
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "000005",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Una vivienda en madera es sinónimo de bienestar y confort. Las superficies de madera y sus propiedades naturales para retener el calor y regular la humedad crean un clima interior equilibrado, convirtiendo cada espacio en un ambiente cálido y agradable para vivir.</p>",
+          "text_color": "#3C3C38",
+          "typography_typography": "custom",
+          "typography_font_family": "Open Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.75,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "00000a",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Fotografía",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "000009",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "000008",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "/wp-content/themes/forestal-leon/assets/images/tipologia-viviendas.jpg",
+         "id": ""
+        },
+        "image_size": "full",
+        "alt": "Estructura de vivienda en madera laminada",
+        "_title": "Foto — Viviendas",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "000012",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Ficha técnica",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#FAFAF7"
+   },
+   "elements": [
+    {
+     "id": "000011",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "00000b",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Ficha técnica del sistema Timber Frame",
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 32,
+         "column": "32",
+         "row": "24"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F4EFE4",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#01735A",
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 4,
+         "blur": 16,
+         "spread": 0,
+         "color": "rgba(26,26,23,0.08)"
+        }
+       },
+       "elements": [
+        {
+         "id": "00000c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Texto",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 65,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 8,
+           "column": "8",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "00000d",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Ficha técnica del sistema Timber Frame",
+            "header_size": "h3",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "00000e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Escuadrías, conectores estructurales y el detalle completo de los componentes que fabricamos en planta para tu proyecto de vivienda.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "00000f",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Botón",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 30,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "000010",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Solicitar ficha técnica",
+            "link": {
+             "url": "/contacto/#construccion-e-ingenieria",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "000019",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Texto",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "000018",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "000017",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Texto y foto",
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 40,
+         "column": "40",
+         "row": "80"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap"
+       },
+       "elements": [
+        {
+         "id": "000013",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Texto",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 58,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "16"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "000014",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>La construcción de viviendas unifamiliares en madera con sistema <strong>Timber Frame</strong> es hoy una de las alternativas más eficientes y competitivas del mercado chileno. En Forestal León fabricamos todos los componentes estructurales en planta, con vigas laminadas, pilares y conectores estructurales metálicos listos para montar en obra, tanto para construcciones nuevas como para ampliaciones de viviendas existentes.</p><p>La estructura se complementa con panelería liviana no estructural, ya sea tabiquería de madera, perfilería metálica, paneles aislantes o vidrio, permitiendo adaptar cada vivienda a los requerimientos funcionales, climáticos y estéticos del proyecto. El resultado es una estructura precisa, durable y adaptable a cualquier estilo arquitectónico, ya sea tradicional o moderno, con el toque personal que cada proyecto merece.</p><p>Lo que fabricamos en planta y lo que se ejecuta en obra queda definido desde el primer contacto: Forestal León entrega el kit estructural —vigas laminadas, pilares y conectores metálicos— listo para montar; el montaje, la panelería de cierre y las terminaciones corren por cuenta del equipo de construcción del proyecto.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "000015",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Foto",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 38,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "000016",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/producto-vigas-y-pilares-laminados.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Vigas y pilares laminados fabricados en planta",
+            "_title": "Foto — producto",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "000027",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Referencias",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#ECEBE6"
+   },
+   "elements": [
+    {
+     "id": "000026",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "00001a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Referencias",
+        "header_size": "h2",
+        "title_color": "#3C3C38",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 46,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.15,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "4",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "00001b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Próximamente — obras de vivienda ejecutadas con este sistema.</p>",
+        "text_color": "#6B6B64",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "000025",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Rejilla de referencias",
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 32,
+         "column": "32",
+         "row": "64"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap",
+        "css_classes": "fl-referencias"
+       },
+       "elements": [
+        {
+         "id": "00001c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "PENDIENTE — sustituir por foto y datos de obra real",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 31,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "00001d",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/construccion-01-nave.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Fabricación de estructura en planta — imagen provisional",
+            "_title": "Marcador — pendiente de foto real",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "00001e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Referencia de obra — foto y datos pendientes</p>",
+            "text_color": "#6B6B64",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "00001f",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "PENDIENTE — sustituir por foto y datos de obra real",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 31,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "000020",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/construccion-03-cercha.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Montaje de cercha laminada — imagen provisional",
+            "_title": "Marcador — pendiente de foto real",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000021",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Referencia de obra — foto y datos pendientes</p>",
+            "text_color": "#6B6B64",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "000022",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "PENDIENTE — sustituir por foto y datos de obra real",
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 31,
+           "sizes": []
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "000023",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/themes/forestal-leon/assets/images/construccion-05-cercha.jpg",
+             "id": ""
+            },
+            "image_size": "full",
+            "alt": "Ensamblaje de cercha laminada — imagen provisional",
+            "_title": "Marcador — pendiente de foto real",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000024",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Referencia de obra — foto y datos pendientes</p>",
+            "text_color": "#6B6B64",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "00003b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "Contacto",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+   },
+   "elements": [
+    {
+     "id": "00003a",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "000028",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Contacto",
+        "header_size": "h2",
+        "title_color": "#01735A",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 76,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.1,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": []
+      },
+      {
+       "id": "000039",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "_title": "Cuatro servicios",
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "48"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_wrap": "wrap"
+       },
+       "elements": [
+        {
+         "id": "000029",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Compra de productos",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
+          }
+         },
+         "elements": [
+          {
+           "id": "00002a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Compra de productos",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "00002b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Cotiza madera aserrada, estructural o laminados.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "00002c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Solicitar cotización",
+            "link": {
+             "url": "/contacto/#compra-de-productos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "00002d",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Construcción e ingeniería",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
+          }
+         },
+         "elements": [
+          {
+           "id": "00002e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Construcción e ingeniería",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "00002f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Desarrolla tu proyecto en madera con nosotros.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000030",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Desarrollar un proyecto",
+            "link": {
+             "url": "/contacto/#construccion-e-ingenieria",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "000031",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Reclamos y MPD",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
+          }
+         },
+         "elements": [
+          {
+           "id": "000032",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Reclamos y MPD",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000033",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Canal formal de reclamos y prevención de delitos.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000034",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Presentar un caso",
+            "link": {
+             "url": "/contacto/#reclamos",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "000035",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_title": "Contacto general",
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#D4D0C8",
+          "width": {
+           "unit": "%",
+           "size": 23,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 1,
+           "blur": 2,
+           "spread": 0,
+           "color": "rgba(26,26,23,0.06)"
+          }
+         },
+         "elements": [
+          {
+           "id": "000036",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Contacto general",
+            "header_size": "h4",
+            "title_color": "#1A1A17",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000037",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Prensa, alianzas y cualquier otra consulta.</p>",
+            "text_color": "#3C3C38",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.75,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "000038",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Escríbenos",
+            "link": {
+             "url": "/contacto/#contacto-general",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "button_type": "link",
+            "button_text_color": "#01735A",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_color": "#01735A"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

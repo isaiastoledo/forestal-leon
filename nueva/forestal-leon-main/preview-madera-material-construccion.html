@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vista previa — La madera como material de construcción</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --base:#ffffff; --base-alt:#fafaf7; --cream:#f4efe4; --section-grey:#ECEBE6;
+  --primary:#01735a; --primary-dark:#015644;
+  --forest-deep:#1c3829; --forest-mid:#2e5940; --forest-light:#4a7c5f;
+  --sage:#7a9e7e; --sage-pale:#c5d9c6;
+  --wood:#c4832a; --wood-text:#a16b22; --wood-pale:#e8c48a; --bark:#3d2b1f;
+  --contrast:#3c3c38; --ink:#1a1a17; --contrast-mid:#6b6b64;
+  --stone:#8a8679; --border:#d4d0c8;
+  --s10:.5rem; --s20:1rem; --s30:1.5rem; --s40:2rem; --s50:3rem;
+  --s60:clamp(3rem,6vw,5rem); --s70:clamp(4rem,8vw,6rem);
+  --t-fast:.128s ease-out; --t-base:.256s ease-out;
+  /* las tres sombras que ya define theme.json — no invento valores nuevos */
+  --sombra-sutil:0 1px 2px rgba(26,26,23,.06);
+  --sombra-media:0 4px 16px rgba(26,26,23,.08);
+  --sombra-alta:0 12px 40px rgba(26,26,23,.12);
+  --font:"Open Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+/* ---- movimiento: un solo sistema, aparición al entrar en pantalla ---- */
+.reveal{opacity:0;transform:translateY(20px);
+  transition:opacity .55s ease-out var(--d,0s),transform .55s ease-out var(--d,0s)}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal,.reveal.visible{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--base);color:var(--contrast);font-family:var(--font);font-size:16px;line-height:1.75}
+.wrap{max-width:1360px;margin-inline:auto;padding:0 clamp(1rem,2vw,1.5rem)}
+p{margin:0}
+a{color:var(--primary);text-decoration:underline;transition:color var(--t-fast)}
+a:hover{color:var(--primary-dark)}
+h1,h2,h3,h4{font-family:var(--font);font-weight:400;line-height:1.15;margin:0;color:var(--ink)}
+
+/* cabecera normal (estática, no fija) de las páginas interiores */
+.hdr{padding:var(--s30) 0;border-bottom:1px solid var(--border);background:#fff;
+  box-shadow:var(--sombra-sutil);position:relative;z-index:5}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s30);flex-wrap:wrap}
+.hdr img{height:44px;width:auto;display:block}
+.hdr nav ul{display:flex;gap:var(--s30);align-items:center;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.hdr nav a{font-size:.9375rem;font-weight:700;text-transform:uppercase;color:var(--primary);text-decoration:none}
+.hdr nav a:hover{color:var(--primary-dark)}
+.hdr .cotizar{background:var(--primary);color:#fff!important;padding:.7rem 1.1rem}
+
+.aviso{background:var(--ink);color:#fff;font-size:.8125rem;text-align:center;padding:.6rem 1rem}
+.aviso strong{color:var(--sage-pale)}
+
+/* ---- 1. portada clara, con texto primero (binderholz) ---- */
+.hero{padding:clamp(3rem,7vw,4.5rem) 0 clamp(2rem,5vw,3rem);
+  background:linear-gradient(180deg,var(--base) 0%,var(--base-alt) 100%)}
+.hero .lbl{color:var(--primary);font-size:.9375rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--s10)}
+.hero h1{color:var(--primary);font-size:clamp(2rem,5.5vw,3.875rem);text-transform:uppercase;line-height:1.1}
+.hero h2{color:var(--contrast);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.25;margin-top:.25rem}
+.hero .entradilla{margin-top:var(--s30);font-size:1.125rem;line-height:1.75;color:var(--contrast)}
+
+/* ---- banda entre la portada y las ventajas: alineada a los márgenes ---- */
+.banda-seccion{padding-bottom:var(--s50);background:var(--base-alt)}
+.banda{aspect-ratio:16/9;max-width:900px;background:var(--ink);box-shadow:var(--sombra-alta)}
+.banda iframe{width:100%;height:100%;border:0;display:block}
+.banda-pie{margin-top:.75rem;font-size:.8125rem;line-height:1.6;color:var(--contrast-mid)}
+
+/* ---- 2. ventajas: bloques narrativos, no grilla de tarjetas ---- */
+.ventajas{padding:var(--s70) 0;
+  background:linear-gradient(180deg,var(--cream) 0%,var(--section-grey) 45%,var(--section-grey) 100%)}
+.ventajas > .wrap > h2{color:var(--primary);text-transform:uppercase;font-size:clamp(1.625rem,3.4vw,2.875rem);margin-bottom:var(--s60)}
+.cluster{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:3rem 2rem;margin-top:var(--s60)}
+.cluster:first-of-type{margin-top:0}
+.cluster__texto{flex:1 1 420px;max-width:560px}
+.cluster__foto{flex:1 1 420px;max-width:560px;overflow:hidden;box-shadow:var(--sombra-media);
+  transition:box-shadow var(--t-base)}
+.cluster__foto:hover{box-shadow:var(--sombra-alta)}
+.cluster__foto img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;
+  transition:transform .5s ease-out}
+.cluster__foto:hover img{transform:scale(1.04)}
+.cluster h3{font-size:1.5rem;font-weight:700;margin-bottom:.75rem}
+.cluster__texto p{margin-top:.9rem;font-size:1rem;line-height:1.75;color:var(--contrast)}
+.cluster__texto p:first-of-type{margin-top:0}
+.cluster__texto strong{color:var(--ink)}
+
+.cluster--seguridad{background:#fff;border-top:4px solid var(--primary);padding:var(--s40);margin-top:var(--s60);
+  box-shadow:var(--sombra-media);transition:box-shadow var(--t-base)}
+.cluster--seguridad:hover{box-shadow:var(--sombra-alta)}
+.cluster--seguridad .cluster__foto{display:flex;gap:.75rem;box-shadow:none;overflow:visible}
+/* cada foto ocupa la mitad: sin flex-basis 0 las dos se salen de la tarjeta */
+.cluster--seguridad .cluster__foto img{aspect-ratio:1/1;flex:1 1 0;min-width:0;box-shadow:var(--sombra-sutil)}
+
+/* ---- signature: comparación de superficie útil ---- */
+.superficie{background:#fff;border:1px solid var(--border);padding:var(--s40);margin-top:var(--s60);text-align:center;
+  box-shadow:var(--sombra-media);transition:box-shadow var(--t-base)}
+.superficie:hover{box-shadow:var(--sombra-alta)}
+.superficie h4{font-size:1.1875rem;font-weight:700}
+.superficie .planos{max-width:820px;margin:1rem auto 0;display:flex;flex-wrap:wrap;gap:2.5rem;align-items:flex-end;justify-content:center}
+.superficie .plano p{margin:0}
+.superficie .plano .nombre{margin-top:.75rem;font-size:.9375rem;font-weight:700;color:var(--ink)}
+.superficie .plano .detalle{margin-top:.25rem;font-size:.8125rem;color:var(--contrast-mid)}
+.superficie .nota{max-width:620px;margin:1.5rem auto 0;font-size:.9375rem;color:var(--contrast-mid)}
+
+/* ---- footer (resumen) ---- */
+footer{background:var(--forest-deep);color:#fff;padding:var(--s60) 0}
+footer p{font-size:.875rem;color:var(--sage-pale)}
+</style>
+</head>
+<body>
+
+<div class="aviso">Vista previa estática — no interactiva — de la propuesta para <strong>«La madera como material de construcción»</strong>. Genera el JSON real en <code>elementor/madera-material-construccion.json</code>.</div>
+
+<div class="hdr"><div class="wrap">
+  <img src="forestal-leon/assets/images/logo-forestal-leon.png" alt="Forestal León">
+  <nav aria-label="Navegación principal"><ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Construcción en madera</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Quiénes Somos</a></li>
+    <li><a href="#">Servicio</a></li>
+    <li><a href="#" class="cotizar">Cotizar</a></li>
+  </ul></nav>
+</div></div>
+
+<!-- 1. PORTADA — clara, texto primero, sin banda oscura (binderholz) -->
+<section class="hero"><div class="wrap">
+  <p class="lbl reveal">Construcción en madera</p>
+  <h1 class="reveal" style="--d:.08s">La madera como material de construcción</h1>
+  <h2 class="reveal" style="--d:.16s">Construir en madera no es una tendencia. Es una decisión técnica respaldada por la ciencia y las necesidades modernas.</h2>
+  <p class="entradilla reveal" style="--d:.24s">La madera lleva siglos siendo parte de la construcción. Lo que ha cambiado es la ciencia detrás de ella. Hoy, con tecnología de fabricación de alta precisión y profundo conocimiento de sus propiedades estructurales, la madera de ingeniería compite de igual a igual con el hormigón y el acero, y los supera en varios aspectos críticos para la construcción actual.</p>
+</div></section>
+
+<!-- BANDA — vídeo: respiro visual entre la portada y el argumento.
+     OJO: el ID de YouTube es PROVISIONAL (es el corporativo del home). Sustituir. -->
+<div class="banda-seccion"><div class="wrap">
+  <div class="banda reveal"><iframe
+    src="https://www.youtube-nocookie.com/embed/W7I0AbMwMwY?rel=0&amp;modestbranding=1"
+    title="Forestal León — fabricación de vigas laminadas"
+    allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <p class="banda-pie">Fabricación de vigas laminadas en la planta de Coelemu.</p>
+</div></div>
+
+<!-- 2. VENTAJAS — bloques narrativos alternados, no grilla de 11 tarjetas iguales -->
+<section class="ventajas"><div class="wrap">
+  <h2 class="reveal">Ventajas técnicas</h2>
+
+  <div class="cluster reveal">
+    <div class="cluster__texto">
+      <h3>Ligereza, prefabricación y costo</h3>
+      <p><strong>Ligereza estructural.</strong> Mucho más liviana que el hormigón y el acero: reduce las cargas sobre las fundaciones y su costo. Determinante al añadir plantas sobre edificios existentes.</p>
+      <p><strong>Prefabricación y velocidad.</strong> Los componentes llegan a obra prácticamente terminados. Se eliminan los tiempos de fraguado y curado, y el plazo se acorta en semanas o meses.</p>
+      <p><strong>Menor costo total de obra.</strong> Menos tiempo de obra, menos mano de obra en terreno, fundaciones más simples y menos equipamiento logístico. El ahorro es concreto y medible.</p>
+    </div>
+    <div class="cluster__foto"><img src="forestal-leon/assets/images/ventaja-prefabricacion.jpg" alt="Prefabricación de componentes de madera laminada"></div>
+  </div>
+
+  <div class="superficie reveal">
+    <h4>Más superficie útil</h4>
+    <div class="planos">
+      <div class="plano">
+        <svg width="180" height="180" viewBox="0 0 200 200" aria-hidden="true">
+          <rect x="8" y="8" width="184" height="184" fill="none" stroke="#8A8679" stroke-width="20"/>
+          <rect x="28" y="28" width="144" height="144" fill="#ECEBE6"/>
+        </svg>
+        <p class="nombre">Muro tradicional</p>
+        <p class="detalle">Muro portante grueso</p>
+      </div>
+      <div class="plano">
+        <svg width="180" height="180" viewBox="0 0 200 200" aria-hidden="true">
+          <rect x="8" y="8" width="184" height="184" fill="none" stroke="#01735A" stroke-width="9"/>
+          <rect x="17" y="17" width="166" height="166" fill="#ECEBE6"/>
+        </svg>
+        <p class="nombre">Muro en madera laminada</p>
+        <p class="detalle">Muro portante esbelto</p>
+      </div>
+    </div>
+    <p class="nota">A igual huella, un muro portante más esbelto deja más metros cuadrados interiores aprovechables. La proporción exacta depende del sistema constructivo y del cálculo de cada proyecto.</p>
+  </div>
+
+  <div class="cluster reveal">
+    <div class="cluster__foto"><img src="forestal-leon/assets/images/ventaja-resistencia.jpg" alt="Cercha laminada en una nave industrial"></div>
+    <div class="cluster__texto">
+      <h3>Resistencia técnica</h3>
+      <p><strong>Resistencia técnica superior.</strong> En relación a su peso propio soporta cargas muy superiores a las del acero, y su resistencia a la compresión es comparable a la del hormigón armado.</p>
+      <p><strong>Resistencia a la torsión.</strong> La orientación alternada de las fibras en cada lámina neutraliza las tensiones internas y mantiene la geometría de la pieza bajo cargas dinámicas.</p>
+    </div>
+  </div>
+
+  <div class="cluster cluster--seguridad reveal">
+    <div class="cluster__texto">
+      <h3>Seguridad ante sismo e incendio</h3>
+      <p><strong>Comportamiento sísmico.</strong> Criterio no negociable en Chile. Su flexibilidad, unida al bajo peso y la alta resistencia, absorbe y disipa la energía del sismo con eficiencia.</p>
+      <p><strong>Comportamiento ante el fuego.</strong> Mejor que el acero: forma una capa superficial de carbón que aísla el núcleo y mantiene la capacidad portante mucho más tiempo que una viga metálica.</p>
+    </div>
+    <div class="cluster__foto">
+      <img src="forestal-leon/assets/images/ventaja-sismico.jpg" alt="Comportamiento sísmico">
+      <img src="forestal-leon/assets/images/ventaja-fuego.jpg" alt="Comportamiento ante el fuego">
+    </div>
+  </div>
+
+  <div class="cluster reveal">
+    <div class="cluster__foto"><img src="forestal-leon/assets/images/ventaja-versatilidad.jpg" alt="Versatilidad arquitectónica"></div>
+    <div class="cluster__texto">
+      <h3>Versatilidad, tratamiento y origen</h3>
+      <p><strong>Versatilidad arquitectónica.</strong> Grandes luces sin apoyos intermedios y estructuras curvas. El elemento estructural es a la vez terminación: la madera a la vista pasa a ser parte del diseño.</p>
+      <p><strong>Soluciones híbridas.</strong> Combinada con hormigón, acero y vidrio, es integrable en casi cualquier concepto arquitectónico, tanto en obra nueva como en renovación.</p>
+      <p><strong>Tratamiento de impregnado.</strong> Aplicado en planta, eleva la durabilidad estructural. Apto para zonas de alta humedad, exteriores y ambientes industriales corrosivos.</p>
+      <p><strong>Certificación FSC.</strong> Las vigas laminadas de Forestal León cuentan con certificación FSC, el sello que garantiza madera de bosques gestionados de forma responsable.</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><p>↓ A continuación sigue igual: la banda «Hablamos de tu proyecto» y el bloque de contacto de siempre — no se tocaron.</p></div></footer>
+
+<script>
+/* Aparición al entrar en pantalla. Una sola vez por elemento.
+   Si el sistema pide menos movimiento, o el navegador es antiguo, se muestra todo sin animar. */
+(function () {
+  var objetivos = document.querySelectorAll('.reveal');
+  var menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function mostrarTodo() {
+    Array.prototype.forEach.call(objetivos, function (el) { el.classList.add('visible'); });
+  }
+  if (menosMovimiento || !('IntersectionObserver' in window)) { mostrarTodo(); return; }
+
+  var observador = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (entrada) {
+      if (!entrada.isIntersecting) return;
+      entrada.target.classList.add('visible');
+      observador.unobserve(entrada.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+  Array.prototype.forEach.call(objetivos, function (el) { observador.observe(el); });
+}());
+</script>
+
+</body>
+</html>

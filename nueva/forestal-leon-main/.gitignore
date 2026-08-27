@@ -1,0 +1,13 @@
+# Paquetes generados — se producen con empaquetar.py y se publican en Releases
+forestal-leon.zip
+elementor-forestal-leon.zip
+
+# Fotografía original sin optimizar (material fuente, pesa 5,8 MB)
+fotos/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
