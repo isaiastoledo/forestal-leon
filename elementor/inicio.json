@@ -163,7 +163,7 @@
         },
         "_margin": {
          "unit": "px",
-         "top": "4",
+         "top": "-20",
          "right": "0",
          "bottom": "24",
          "left": "0",

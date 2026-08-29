@@ -137,73 +137,6 @@
    "isInner": false
   },
   {
-   "id": "2b9aab",
-   "elType": "container",
-   "settings": {
-    "_title": "Vídeo corporativo",
-    "content_width": "full",
-    "flex_direction": "column",
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "0",
-     "bottom": "48",
-     "left": "0",
-     "isLinked": false
-    },
-    "width": {
-     "unit": "%",
-     "size": 100,
-     "sizes": []
-    }
-   },
-   "elements": [
-    {
-     "id": "5fc779",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "_title": "Contenido",
-      "content_width": "boxed",
-      "flex_direction": "column",
-      "width": {
-       "unit": "%",
-       "size": 100,
-       "sizes": []
-      },
-      "flex_gap": {
-       "unit": "px",
-       "size": 20,
-       "column": "20",
-       "row": "20"
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": true
-      }
-     },
-     "elements": [
-      {
-       "id": "2b7bbc",
-       "elType": "widget",
-       "widgetType": "video",
-       "settings": {
-        "video_type": "youtube",
-        "youtube_url": "https://www.youtube.com/watch?v=W7I0AbMwMwY",
-        "aspect_ratio": "169"
-       },
-       "elements": []
-      }
-     ]
-    }
-   ],
-   "isInner": false
-  },
-  {
    "id": "2bd889",
    "elType": "container",
    "settings": {
@@ -273,6 +206,73 @@
          "size": 1.75,
          "sizes": []
         }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2b9aab",
+   "elType": "container",
+   "settings": {
+    "_title": "Vídeo corporativo",
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "5fc779",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "2b7bbc",
+       "elType": "widget",
+       "widgetType": "video",
+       "settings": {
+        "video_type": "youtube",
+        "youtube_url": "https://www.youtube.com/watch?v=W7I0AbMwMwY",
+        "aspect_ratio": "169"
        },
        "elements": []
       }

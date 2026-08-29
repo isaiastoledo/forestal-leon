@@ -173,82 +173,6 @@
    "isInner": false
   },
   {
-   "id": "1c99a0",
-   "elType": "container",
-   "settings": {
-    "_title": "Fotografía",
-    "content_width": "full",
-    "flex_direction": "column",
-    "width": {
-     "unit": "%",
-     "size": 100,
-     "sizes": []
-    },
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "0",
-     "bottom": "0",
-     "left": "0",
-     "isLinked": false
-    }
-   },
-   "elements": [
-    {
-     "id": "1c7ab1",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "_title": "Contenido",
-      "content_width": "boxed",
-      "flex_direction": "column",
-      "width": {
-       "unit": "%",
-       "size": 100,
-       "sizes": []
-      },
-      "flex_gap": {
-       "unit": "px",
-       "size": 24,
-       "column": "24",
-       "row": "24"
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": false
-      }
-     },
-     "elements": [
-      {
-       "id": "1c5bc2",
-       "elType": "widget",
-       "widgetType": "image",
-       "settings": {
-        "image": {
-         "url": "/wp-content/themes/forestal-leon/assets/images/tipologia-turismo.jpg",
-         "id": ""
-        },
-        "image_size": "full",
-        "alt": "Cercha laminada en un proyecto turístico",
-        "_title": "Foto — Turismo",
-        "width": {
-         "unit": "%",
-         "size": 100,
-         "sizes": []
-        }
-       },
-       "elements": []
-      }
-     ]
-    }
-   ],
-   "isInner": false
-  },
-  {
    "id": "1cf66d",
    "elType": "container",
    "settings": {
@@ -316,6 +240,82 @@
         "typography_line_height": {
          "unit": "em",
          "size": 1.75,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1c99a0",
+   "elType": "container",
+   "settings": {
+    "_title": "Fotografía",
+    "content_width": "full",
+    "flex_direction": "column",
+    "width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "1c7ab1",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "_title": "Contenido",
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24"
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "1c5bc2",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "/wp-content/themes/forestal-leon/assets/images/tipologia-turismo.jpg",
+         "id": ""
+        },
+        "image_size": "full",
+        "alt": "Cercha laminada en un proyecto turístico",
+        "_title": "Foto — Turismo",
+        "width": {
+         "unit": "%",
+         "size": 100,
          "sizes": []
         }
        },
