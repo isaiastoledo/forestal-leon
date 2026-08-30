@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.20.0
+Version: 2.21.0
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -884,6 +884,21 @@ html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
 	margin-inline: auto;
 	max-width: var( --wp--style--global--content-size );
 	padding-inline: var( --wp--custom--contenedor--padding );
+}
+
+/* Las galerías de FooGallery en las fichas de proyecto van a ancho de banda,
+   igual que un bloque «alignfull». Se hace aquí y no marcando cada bloque a mano
+   porque son tres galerías por ficha y cinco fichas.
+
+   Se usa la misma técnica que arriba —restar el margen lateral— y no «100vw»:
+   con vw la barra de desplazamiento cuenta como ancho y aparece un
+   desplazamiento horizontal de unos pocos píxeles. */
+.single-proyecto .wp-block-post-content .foogallery,
+.single-proyecto .wp-block-post-content p:has( > .foogallery ) {
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
+	max-width: none;
+	width: auto;
 }
 
 /* El hero no lleva texto: que la imagen ocupe todo sin recuadrar. */
