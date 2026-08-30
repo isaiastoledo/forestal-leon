@@ -50,12 +50,12 @@ Al terminar, usar **Enviar correo de prueba** antes de seguir.
 
 | # | Formulario | Va a | Asunto del correo |
 |---|---|---|---|
-| 1 | Compra de productos | `ventas@…` | `[Web] Cotización — {inputs.nombre}` |
-| 2 | Construcción e ingeniería | `proyectos@…` | `[Web] Proyecto — {inputs.nombre}` |
-| 3 | Reclamos y MPD | `cumplimiento@…` | `[Web] Reclamo — {inputs.nombre}` |
-| 4 | Contacto general | `contacto@…` | `[Web] Consulta — {inputs.nombre}` |
+| 1 | Compra de productos | `ventas@forestalleon.cl` | `[Web] Cotización — {inputs.nombre}` |
+| 2 | Construcción e ingeniería | `construcciones@forestalleon.cl` | `[Web] Proyecto — {inputs.nombre}` |
+| 3 | Reclamos y MPD | `reclamos@forestalleon.cl` | `[Web] Reclamo — {inputs.nombre}` |
+| 4 | Contacto general | `contacto@forestalleon.cl` | `[Web] Consulta — {inputs.nombre}` |
 
-Las direcciones de la tercera columna las tiene que confirmar el cliente.
+Direcciones confirmadas por el cliente el 29 de agosto de 2026.
 
 ### Campos de cada formulario
 
