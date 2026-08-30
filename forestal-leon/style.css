@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.22.0
+Version: 2.22.1
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -906,6 +906,17 @@ html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
    la página y fija el tamaño de cada foto para el ancho que encuentra
    entonces. Por eso la regla tiene que venir en la hoja del tema; añadirla
    después, desde el navegador, ensancha la caja pero no rehace el mosaico. */
+/* «50vw» mide la ventana con la barra de desplazamiento incluida, así que la
+   galería sobresale unos 15 px y la página se puede arrastrar de lado. Se
+   recorta ese sobrante.
+
+   Va «clip» y no «hidden» a propósito: «hidden» convertiría el body en un
+   contenedor de desplazamiento y rompería el comportamiento de los elementos
+   fijos. Solo se aplica en las fichas de proyecto. */
+body.single-proyecto {
+	overflow-x: clip;
+}
+
 .single-proyecto .wp-block-post-content .foogallery,
 .single-proyecto .wp-block-post-content p:has( > .foogallery ) {
 	margin-left: calc( 50% - 50vw ) !important;
