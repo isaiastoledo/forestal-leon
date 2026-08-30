@@ -1,0 +1,1450 @@
+[
+ {
+  "id": 1,
+  "title": "Compra de productos",
+  "status": "published",
+  "appearance_settings": null,
+  "form_fields": {
+   "fields": [
+    {
+     "index": 0,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "nombre",
+      "value": "",
+      "class": "",
+      "placeholder": "Tu nombre y apellido"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Nombre",
+      "label_placement": "",
+      "admin_field_label": "Nombre",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_nombre"
+    },
+    {
+     "index": 1,
+     "element": "input_email",
+     "attributes": {
+      "type": "email",
+      "name": "email",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "tu@correo.cl"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Correo electrónico",
+      "label_placement": "",
+      "help_message": "",
+      "admin_field_label": "Correo",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       },
+       "email": {
+        "value": true,
+        "message": "Escribe un correo electrónico válido"
+       }
+      },
+      "conditional_logics": []
+     },
+     "editor_options": {
+      "title": "Email Address",
+      "icon_class": "ff-edit-email",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_email"
+    },
+    {
+     "index": 2,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "telefono",
+      "value": "",
+      "class": "",
+      "placeholder": "+56 9 1234 5678"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Teléfono",
+      "label_placement": "",
+      "admin_field_label": "Teléfono",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_telefono"
+    },
+    {
+     "index": 3,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "empresa",
+      "value": "",
+      "class": "",
+      "placeholder": "Nombre de tu empresa u organización"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Empresa",
+      "label_placement": "",
+      "admin_field_label": "Empresa",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_empresa"
+    },
+    {
+     "index": 4,
+     "element": "select",
+     "attributes": {
+      "name": "producto",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Selecciona una opción"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Producto de interés",
+      "admin_field_label": "Producto de interés",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      },
+      "placeholder": "Selecciona una opción",
+      "enable_select_2": "no",
+      "max_selection": "",
+      "advanced_options": [
+       {
+        "label": "Madera aserrada",
+        "value": "Madera aserrada",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Plywood",
+        "value": "Plywood",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Laminado",
+        "value": "Laminado",
+        "image": "",
+        "calc_value": ""
+       }
+      ]
+     },
+     "editor_options": {
+      "title": "Dropdown",
+      "icon_class": "ff-edit-dropdown",
+      "template": "select"
+     },
+     "uniqElKey": "el_fl_producto"
+    },
+    {
+     "index": 5,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "volumen",
+      "value": "",
+      "class": "",
+      "placeholder": "Ej: 2x4 pulgadas, 30 m³"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Escuadría y volumen",
+      "label_placement": "",
+      "admin_field_label": "Escuadría y volumen",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_volumen"
+    },
+    {
+     "index": 6,
+     "element": "textarea",
+     "attributes": {
+      "name": "mensaje",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Indícanos qué necesitas cotizar",
+      "rows": 5,
+      "cols": 2
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Mensaje",
+      "admin_field_label": "Mensaje",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Text Area",
+      "icon_class": "ff-edit-textarea",
+      "template": "inputTextarea"
+     },
+     "uniqElKey": "el_fl_mensaje"
+    }
+   ],
+   "submitButton": {
+    "uniqElKey": "el_fl_submit",
+    "element": "button",
+    "attributes": {
+     "type": "submit",
+     "class": ""
+    },
+    "settings": {
+     "align": "left",
+     "button_style": "default",
+     "container_class": "",
+     "help_message": "",
+     "background_color": "#01735A",
+     "button_size": "md",
+     "color": "#ffffff",
+     "button_ui": {
+      "type": "default",
+      "text": "Enviar",
+      "img_url": ""
+     }
+    },
+    "editor_options": {
+     "title": "Submit Button"
+    }
+   }
+  },
+  "has_payment": "0",
+  "type": "",
+  "conditions": null,
+  "created_by": "1",
+  "created_at": "2026-08-30 00:00:00",
+  "updated_at": "2026-08-30 00:00:00",
+  "form_meta": [],
+  "metas": [
+   {
+    "id": 1,
+    "form_id": "1",
+    "meta_key": "template_name",
+    "value": "blank_form"
+   },
+   {
+    "id": 2,
+    "form_id": "1",
+    "meta_key": "formSettings",
+    "value": "{\"confirmation\": {\"redirectTo\": \"samePage\", \"messageToShow\": \"Gracias por tu solicitud. Te respondemos en menos de 48 horas hábiles.\", \"customPage\": null, \"samePageFormBehavior\": \"hide_form\", \"customUrl\": null}, \"restrictions\": {\"limitNumberOfEntries\": {\"enabled\": false, \"numberOfEntries\": null, \"period\": \"total\", \"limitReachedMsg\": \"Se alcanzó el número máximo de envíos.\"}, \"scheduleForm\": {\"enabled\": false, \"start\": null, \"end\": null, \"selectedDays\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"], \"pendingMsg\": \"El formulario aún no está disponible.\", \"expiredMsg\": \"El formulario está cerrado.\"}, \"requireLogin\": {\"enabled\": false, \"requireLoginMsg\": \"Debes iniciar sesión para enviar.\"}, \"denyEmptySubmission\": {\"enabled\": false, \"message\": \"No se puede enviar un formulario vacío.\"}}, \"layout\": {\"labelPlacement\": \"top\", \"helpMessagePlacement\": \"with_label\", \"errorMessagePlacement\": \"inline\", \"asteriskPlacement\": \"asterisk-right\"}, \"delete_entry_on_submission\": \"no\", \"form_layout\": \"default\"}"
+   },
+   {
+    "id": 3,
+    "form_id": "1",
+    "meta_key": "notifications",
+    "value": "{\"name\": \"Notificación al equipo\", \"sendTo\": {\"type\": \"email\", \"email\": \"ventas@forestalleon.cl\", \"field\": \"\", \"routing\": []}, \"fromName\": \"Forestal León\", \"fromEmail\": \"\", \"replyTo\": \"{inputs.email}\", \"bcc\": \"\", \"subject\": \"[Web] Cotización — {inputs.nombre}\", \"message\": \"<p><b>Nombre:</b> {inputs.nombre}</p><p><b>Correo:</b> {inputs.email}</p><p><b>Teléfono:</b> {inputs.telefono}</p><p><b>Empresa:</b> {inputs.empresa}</p><p><b>Mensaje:</b><br>{inputs.mensaje}</p><hr><p style='font-size:12px;color:#6B6B64'>Enviado desde el formulario «{form_name}» de forestalleon.cl</p>\", \"conditionals\": {\"status\": false, \"type\": \"all\", \"conditions\": [{\"field\": \"\", \"operator\": \"=\", \"value\": \"\"}]}, \"enabled\": true, \"email_template\": \"\", \"asyncEmail\": false}"
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "title": "Construcción e ingeniería",
+  "status": "published",
+  "appearance_settings": null,
+  "form_fields": {
+   "fields": [
+    {
+     "index": 0,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "nombre",
+      "value": "",
+      "class": "",
+      "placeholder": "Tu nombre y apellido"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Nombre",
+      "label_placement": "",
+      "admin_field_label": "Nombre",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_nombre"
+    },
+    {
+     "index": 1,
+     "element": "input_email",
+     "attributes": {
+      "type": "email",
+      "name": "email",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "tu@correo.cl"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Correo electrónico",
+      "label_placement": "",
+      "help_message": "",
+      "admin_field_label": "Correo",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       },
+       "email": {
+        "value": true,
+        "message": "Escribe un correo electrónico válido"
+       }
+      },
+      "conditional_logics": []
+     },
+     "editor_options": {
+      "title": "Email Address",
+      "icon_class": "ff-edit-email",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_email"
+    },
+    {
+     "index": 2,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "telefono",
+      "value": "",
+      "class": "",
+      "placeholder": "+56 9 1234 5678"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Teléfono",
+      "label_placement": "",
+      "admin_field_label": "Teléfono",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_telefono"
+    },
+    {
+     "index": 3,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "empresa",
+      "value": "",
+      "class": "",
+      "placeholder": "Nombre de tu empresa u organización"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Empresa",
+      "label_placement": "",
+      "admin_field_label": "Empresa",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_empresa"
+    },
+    {
+     "index": 4,
+     "element": "select",
+     "attributes": {
+      "name": "tipo",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Selecciona una opción"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Tipo de proyecto",
+      "admin_field_label": "Tipo de proyecto",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      },
+      "placeholder": "Selecciona una opción",
+      "enable_select_2": "no",
+      "max_selection": "",
+      "advanced_options": [
+       {
+        "label": "Vivienda",
+        "value": "Vivienda",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Edificio",
+        "value": "Edificio",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Turismo",
+        "value": "Turismo",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Industrial",
+        "value": "Industrial",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Otro",
+        "value": "Otro",
+        "image": "",
+        "calc_value": ""
+       }
+      ]
+     },
+     "editor_options": {
+      "title": "Dropdown",
+      "icon_class": "ff-edit-dropdown",
+      "template": "select"
+     },
+     "uniqElKey": "el_fl_tipo"
+    },
+    {
+     "index": 5,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "ubicacion",
+      "value": "",
+      "class": "",
+      "placeholder": "Comuna y región"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Ubicación de la obra",
+      "label_placement": "",
+      "admin_field_label": "Ubicación de la obra",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_ubicacion"
+    },
+    {
+     "index": 6,
+     "element": "select",
+     "attributes": {
+      "name": "estado",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Selecciona una opción"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Estado del proyecto",
+      "admin_field_label": "Estado del proyecto",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      },
+      "placeholder": "Selecciona una opción",
+      "enable_select_2": "no",
+      "max_selection": "",
+      "advanced_options": [
+       {
+        "label": "Idea",
+        "value": "Idea",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Anteproyecto",
+        "value": "Anteproyecto",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Cálculo cerrado",
+        "value": "Cálculo cerrado",
+        "image": "",
+        "calc_value": ""
+       }
+      ]
+     },
+     "editor_options": {
+      "title": "Dropdown",
+      "icon_class": "ff-edit-dropdown",
+      "template": "select"
+     },
+     "uniqElKey": "el_fl_estado"
+    },
+    {
+     "index": 7,
+     "element": "textarea",
+     "attributes": {
+      "name": "mensaje",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Cuéntanos en qué punto está tu proyecto",
+      "rows": 5,
+      "cols": 2
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Mensaje",
+      "admin_field_label": "Mensaje",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Text Area",
+      "icon_class": "ff-edit-textarea",
+      "template": "inputTextarea"
+     },
+     "uniqElKey": "el_fl_mensaje"
+    }
+   ],
+   "submitButton": {
+    "uniqElKey": "el_fl_submit",
+    "element": "button",
+    "attributes": {
+     "type": "submit",
+     "class": ""
+    },
+    "settings": {
+     "align": "left",
+     "button_style": "default",
+     "container_class": "",
+     "help_message": "",
+     "background_color": "#01735A",
+     "button_size": "md",
+     "color": "#ffffff",
+     "button_ui": {
+      "type": "default",
+      "text": "Enviar",
+      "img_url": ""
+     }
+    },
+    "editor_options": {
+     "title": "Submit Button"
+    }
+   }
+  },
+  "has_payment": "0",
+  "type": "",
+  "conditions": null,
+  "created_by": "1",
+  "created_at": "2026-08-30 00:00:00",
+  "updated_at": "2026-08-30 00:00:00",
+  "form_meta": [],
+  "metas": [
+   {
+    "id": 1,
+    "form_id": "2",
+    "meta_key": "template_name",
+    "value": "blank_form"
+   },
+   {
+    "id": 2,
+    "form_id": "2",
+    "meta_key": "formSettings",
+    "value": "{\"confirmation\": {\"redirectTo\": \"samePage\", \"messageToShow\": \"Gracias. Nuestro equipo de proyectos te responde en menos de 48 horas hábiles.\", \"customPage\": null, \"samePageFormBehavior\": \"hide_form\", \"customUrl\": null}, \"restrictions\": {\"limitNumberOfEntries\": {\"enabled\": false, \"numberOfEntries\": null, \"period\": \"total\", \"limitReachedMsg\": \"Se alcanzó el número máximo de envíos.\"}, \"scheduleForm\": {\"enabled\": false, \"start\": null, \"end\": null, \"selectedDays\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"], \"pendingMsg\": \"El formulario aún no está disponible.\", \"expiredMsg\": \"El formulario está cerrado.\"}, \"requireLogin\": {\"enabled\": false, \"requireLoginMsg\": \"Debes iniciar sesión para enviar.\"}, \"denyEmptySubmission\": {\"enabled\": false, \"message\": \"No se puede enviar un formulario vacío.\"}}, \"layout\": {\"labelPlacement\": \"top\", \"helpMessagePlacement\": \"with_label\", \"errorMessagePlacement\": \"inline\", \"asteriskPlacement\": \"asterisk-right\"}, \"delete_entry_on_submission\": \"no\", \"form_layout\": \"default\"}"
+   },
+   {
+    "id": 3,
+    "form_id": "2",
+    "meta_key": "notifications",
+    "value": "{\"name\": \"Notificación al equipo\", \"sendTo\": {\"type\": \"email\", \"email\": \"construcciones@forestalleon.cl\", \"field\": \"\", \"routing\": []}, \"fromName\": \"Forestal León\", \"fromEmail\": \"\", \"replyTo\": \"{inputs.email}\", \"bcc\": \"\", \"subject\": \"[Web] Proyecto — {inputs.nombre}\", \"message\": \"<p><b>Nombre:</b> {inputs.nombre}</p><p><b>Correo:</b> {inputs.email}</p><p><b>Teléfono:</b> {inputs.telefono}</p><p><b>Empresa:</b> {inputs.empresa}</p><p><b>Mensaje:</b><br>{inputs.mensaje}</p><hr><p style='font-size:12px;color:#6B6B64'>Enviado desde el formulario «{form_name}» de forestalleon.cl</p>\", \"conditionals\": {\"status\": false, \"type\": \"all\", \"conditions\": [{\"field\": \"\", \"operator\": \"=\", \"value\": \"\"}]}, \"enabled\": true, \"email_template\": \"\", \"asyncEmail\": false}"
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "title": "Reclamos y MPD",
+  "status": "published",
+  "appearance_settings": null,
+  "form_fields": {
+   "fields": [
+    {
+     "index": 0,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "nombre",
+      "value": "",
+      "class": "",
+      "placeholder": "Tu nombre y apellido"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Nombre",
+      "label_placement": "",
+      "admin_field_label": "Nombre",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_nombre"
+    },
+    {
+     "index": 1,
+     "element": "input_email",
+     "attributes": {
+      "type": "email",
+      "name": "email",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "tu@correo.cl"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Correo electrónico",
+      "label_placement": "",
+      "help_message": "",
+      "admin_field_label": "Correo",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       },
+       "email": {
+        "value": true,
+        "message": "Escribe un correo electrónico válido"
+       }
+      },
+      "conditional_logics": []
+     },
+     "editor_options": {
+      "title": "Email Address",
+      "icon_class": "ff-edit-email",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_email"
+    },
+    {
+     "index": 2,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "telefono",
+      "value": "",
+      "class": "",
+      "placeholder": "+56 9 1234 5678"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Teléfono",
+      "label_placement": "",
+      "admin_field_label": "Teléfono",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_telefono"
+    },
+    {
+     "index": 3,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "empresa",
+      "value": "",
+      "class": "",
+      "placeholder": "Nombre de tu empresa u organización"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Empresa",
+      "label_placement": "",
+      "admin_field_label": "Empresa",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_empresa"
+    },
+    {
+     "index": 4,
+     "element": "select",
+     "attributes": {
+      "name": "tipo_caso",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Selecciona una opción"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Tipo de caso",
+      "admin_field_label": "Tipo de caso",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      },
+      "placeholder": "Selecciona una opción",
+      "enable_select_2": "no",
+      "max_selection": "",
+      "advanced_options": [
+       {
+        "label": "Reclamo",
+        "value": "Reclamo",
+        "image": "",
+        "calc_value": ""
+       },
+       {
+        "label": "Denuncia MPD",
+        "value": "Denuncia MPD",
+        "image": "",
+        "calc_value": ""
+       }
+      ]
+     },
+     "editor_options": {
+      "title": "Dropdown",
+      "icon_class": "ff-edit-dropdown",
+      "template": "select"
+     },
+     "uniqElKey": "el_fl_tipo_caso"
+    },
+    {
+     "index": 5,
+     "element": "input_checkbox",
+     "attributes": {
+      "type": "checkbox",
+      "name": "anonimo",
+      "value": [],
+      "class": ""
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Confidencialidad",
+      "admin_field_label": "Confidencialidad",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      },
+      "advanced_options": [
+       {
+        "label": "Deseo mantener el anonimato",
+        "value": "si",
+        "image": "",
+        "calc_value": ""
+       }
+      ]
+     },
+     "editor_options": {
+      "title": "Check Box",
+      "icon_class": "ff-edit-checkbox",
+      "template": "inputCheckable"
+     },
+     "uniqElKey": "el_fl_anonimo"
+    },
+    {
+     "index": 6,
+     "element": "textarea",
+     "attributes": {
+      "name": "mensaje",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "Describe lo ocurrido con el mayor detalle posible",
+      "rows": 5,
+      "cols": 2
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Mensaje",
+      "admin_field_label": "Mensaje",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Text Area",
+      "icon_class": "ff-edit-textarea",
+      "template": "inputTextarea"
+     },
+     "uniqElKey": "el_fl_mensaje"
+    }
+   ],
+   "submitButton": {
+    "uniqElKey": "el_fl_submit",
+    "element": "button",
+    "attributes": {
+     "type": "submit",
+     "class": ""
+    },
+    "settings": {
+     "align": "left",
+     "button_style": "default",
+     "container_class": "",
+     "help_message": "",
+     "background_color": "#01735A",
+     "button_size": "md",
+     "color": "#ffffff",
+     "button_ui": {
+      "type": "default",
+      "text": "Enviar",
+      "img_url": ""
+     }
+    },
+    "editor_options": {
+     "title": "Submit Button"
+    }
+   }
+  },
+  "has_payment": "0",
+  "type": "",
+  "conditions": null,
+  "created_by": "1",
+  "created_at": "2026-08-30 00:00:00",
+  "updated_at": "2026-08-30 00:00:00",
+  "form_meta": [],
+  "metas": [
+   {
+    "id": 1,
+    "form_id": "3",
+    "meta_key": "template_name",
+    "value": "blank_form"
+   },
+   {
+    "id": 2,
+    "form_id": "3",
+    "meta_key": "formSettings",
+    "value": "{\"confirmation\": {\"redirectTo\": \"samePage\", \"messageToShow\": \"Hemos recibido tu caso. Te confirmamos la recepción en menos de 48 horas hábiles.\", \"customPage\": null, \"samePageFormBehavior\": \"hide_form\", \"customUrl\": null}, \"restrictions\": {\"limitNumberOfEntries\": {\"enabled\": false, \"numberOfEntries\": null, \"period\": \"total\", \"limitReachedMsg\": \"Se alcanzó el número máximo de envíos.\"}, \"scheduleForm\": {\"enabled\": false, \"start\": null, \"end\": null, \"selectedDays\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"], \"pendingMsg\": \"El formulario aún no está disponible.\", \"expiredMsg\": \"El formulario está cerrado.\"}, \"requireLogin\": {\"enabled\": false, \"requireLoginMsg\": \"Debes iniciar sesión para enviar.\"}, \"denyEmptySubmission\": {\"enabled\": false, \"message\": \"No se puede enviar un formulario vacío.\"}}, \"layout\": {\"labelPlacement\": \"top\", \"helpMessagePlacement\": \"with_label\", \"errorMessagePlacement\": \"inline\", \"asteriskPlacement\": \"asterisk-right\"}, \"delete_entry_on_submission\": \"no\", \"form_layout\": \"default\"}"
+   },
+   {
+    "id": 3,
+    "form_id": "3",
+    "meta_key": "notifications",
+    "value": "{\"name\": \"Notificación al equipo\", \"sendTo\": {\"type\": \"email\", \"email\": \"reclamos@forestalleon.cl\", \"field\": \"\", \"routing\": []}, \"fromName\": \"Forestal León\", \"fromEmail\": \"\", \"replyTo\": \"{inputs.email}\", \"bcc\": \"\", \"subject\": \"[Web] Reclamo — {inputs.nombre}\", \"message\": \"<p><b>Nombre:</b> {inputs.nombre}</p><p><b>Correo:</b> {inputs.email}</p><p><b>Teléfono:</b> {inputs.telefono}</p><p><b>Empresa:</b> {inputs.empresa}</p><p><b>Mensaje:</b><br>{inputs.mensaje}</p><hr><p style='font-size:12px;color:#6B6B64'>Enviado desde el formulario «{form_name}» de forestalleon.cl</p>\", \"conditionals\": {\"status\": false, \"type\": \"all\", \"conditions\": [{\"field\": \"\", \"operator\": \"=\", \"value\": \"\"}]}, \"enabled\": true, \"email_template\": \"\", \"asyncEmail\": false}"
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "title": "Contacto general",
+  "status": "published",
+  "appearance_settings": null,
+  "form_fields": {
+   "fields": [
+    {
+     "index": 0,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "nombre",
+      "value": "",
+      "class": "",
+      "placeholder": "Tu nombre y apellido"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Nombre",
+      "label_placement": "",
+      "admin_field_label": "Nombre",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_nombre"
+    },
+    {
+     "index": 1,
+     "element": "input_email",
+     "attributes": {
+      "type": "email",
+      "name": "email",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "tu@correo.cl"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Correo electrónico",
+      "label_placement": "",
+      "help_message": "",
+      "admin_field_label": "Correo",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       },
+       "email": {
+        "value": true,
+        "message": "Escribe un correo electrónico válido"
+       }
+      },
+      "conditional_logics": []
+     },
+     "editor_options": {
+      "title": "Email Address",
+      "icon_class": "ff-edit-email",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_email"
+    },
+    {
+     "index": 2,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "telefono",
+      "value": "",
+      "class": "",
+      "placeholder": "+56 9 1234 5678"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Teléfono",
+      "label_placement": "",
+      "admin_field_label": "Teléfono",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_telefono"
+    },
+    {
+     "index": 3,
+     "element": "input_text",
+     "attributes": {
+      "type": "text",
+      "name": "empresa",
+      "value": "",
+      "class": "",
+      "placeholder": "Nombre de tu empresa u organización"
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Empresa",
+      "label_placement": "",
+      "admin_field_label": "Empresa",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": false,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Simple Text",
+      "icon_class": "ff-edit-text",
+      "template": "inputText"
+     },
+     "uniqElKey": "el_fl_empresa"
+    },
+    {
+     "index": 4,
+     "element": "textarea",
+     "attributes": {
+      "name": "mensaje",
+      "value": "",
+      "id": "",
+      "class": "",
+      "placeholder": "¿En qué podemos ayudarte?",
+      "rows": 5,
+      "cols": 2
+     },
+     "settings": {
+      "container_class": "",
+      "label": "Mensaje",
+      "admin_field_label": "Mensaje",
+      "label_placement": "",
+      "help_message": "",
+      "validation_rules": {
+       "required": {
+        "value": true,
+        "message": "Este campo es obligatorio"
+       }
+      },
+      "conditional_logics": {
+       "type": "any",
+       "status": false,
+       "conditions": [
+        {
+         "field": "",
+         "value": "",
+         "operator": ""
+        }
+       ]
+      }
+     },
+     "editor_options": {
+      "title": "Text Area",
+      "icon_class": "ff-edit-textarea",
+      "template": "inputTextarea"
+     },
+     "uniqElKey": "el_fl_mensaje"
+    }
+   ],
+   "submitButton": {
+    "uniqElKey": "el_fl_submit",
+    "element": "button",
+    "attributes": {
+     "type": "submit",
+     "class": ""
+    },
+    "settings": {
+     "align": "left",
+     "button_style": "default",
+     "container_class": "",
+     "help_message": "",
+     "background_color": "#01735A",
+     "button_size": "md",
+     "color": "#ffffff",
+     "button_ui": {
+      "type": "default",
+      "text": "Enviar",
+      "img_url": ""
+     }
+    },
+    "editor_options": {
+     "title": "Submit Button"
+    }
+   }
+  },
+  "has_payment": "0",
+  "type": "",
+  "conditions": null,
+  "created_by": "1",
+  "created_at": "2026-08-30 00:00:00",
+  "updated_at": "2026-08-30 00:00:00",
+  "form_meta": [],
+  "metas": [
+   {
+    "id": 1,
+    "form_id": "4",
+    "meta_key": "template_name",
+    "value": "blank_form"
+   },
+   {
+    "id": 2,
+    "form_id": "4",
+    "meta_key": "formSettings",
+    "value": "{\"confirmation\": {\"redirectTo\": \"samePage\", \"messageToShow\": \"Gracias por escribirnos. Te respondemos en menos de 48 horas hábiles.\", \"customPage\": null, \"samePageFormBehavior\": \"hide_form\", \"customUrl\": null}, \"restrictions\": {\"limitNumberOfEntries\": {\"enabled\": false, \"numberOfEntries\": null, \"period\": \"total\", \"limitReachedMsg\": \"Se alcanzó el número máximo de envíos.\"}, \"scheduleForm\": {\"enabled\": false, \"start\": null, \"end\": null, \"selectedDays\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"], \"pendingMsg\": \"El formulario aún no está disponible.\", \"expiredMsg\": \"El formulario está cerrado.\"}, \"requireLogin\": {\"enabled\": false, \"requireLoginMsg\": \"Debes iniciar sesión para enviar.\"}, \"denyEmptySubmission\": {\"enabled\": false, \"message\": \"No se puede enviar un formulario vacío.\"}}, \"layout\": {\"labelPlacement\": \"top\", \"helpMessagePlacement\": \"with_label\", \"errorMessagePlacement\": \"inline\", \"asteriskPlacement\": \"asterisk-right\"}, \"delete_entry_on_submission\": \"no\", \"form_layout\": \"default\"}"
+   },
+   {
+    "id": 3,
+    "form_id": "4",
+    "meta_key": "notifications",
+    "value": "{\"name\": \"Notificación al equipo\", \"sendTo\": {\"type\": \"email\", \"email\": \"contacto@forestalleon.cl\", \"field\": \"\", \"routing\": []}, \"fromName\": \"Forestal León\", \"fromEmail\": \"\", \"replyTo\": \"{inputs.email}\", \"bcc\": \"\", \"subject\": \"[Web] Consulta — {inputs.nombre}\", \"message\": \"<p><b>Nombre:</b> {inputs.nombre}</p><p><b>Correo:</b> {inputs.email}</p><p><b>Teléfono:</b> {inputs.telefono}</p><p><b>Empresa:</b> {inputs.empresa}</p><p><b>Mensaje:</b><br>{inputs.mensaje}</p><hr><p style='font-size:12px;color:#6B6B64'>Enviado desde el formulario «{form_name}» de forestalleon.cl</p>\", \"conditionals\": {\"status\": false, \"type\": \"all\", \"conditions\": [{\"field\": \"\", \"operator\": \"=\", \"value\": \"\"}]}, \"enabled\": true, \"email_template\": \"\", \"asyncEmail\": false}"
+   }
+  ]
+ }
+]
