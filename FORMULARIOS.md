@@ -146,15 +146,18 @@ Ya están puestos en las plantillas de Elementor, con el widget **Shortcode**:
 
 | Página | Sección | Shortcode |
 |---|---|---|
-| Contacto | Compra de productos | `[fluentform id="1"]` |
-| Contacto | Construcción e ingeniería | `[fluentform id="2"]` |
-| Contacto | Reclamos y MPD | `[fluentform id="3"]` |
-| Contacto | Contacto general | `[fluentform id="4"]` |
-| Inicio | Formulario de contacto | `[fluentform id="4"]` |
+| Contacto | Compra de productos | `[fluentform id="4"]` |
+| Contacto | Construcción e ingeniería | `[fluentform id="5"]` |
+| Contacto | Reclamos y MPD | `[fluentform id="6"]` |
+| Contacto | Contacto general | `[fluentform id="7"]` |
+| Ficha de proyecto | Las cuatro vías | `4`, `5`, `6` y `7` |
 
-**Los números del 1 al 4 son una suposición.** Fluent Forms asigna el suyo al
-crear cada formulario. Se ve en la columna «Shortcode» de la lista de
-formularios; si no coinciden, hay que corregir esos cinco widgets en Elementor.
+**Los identificadores son del 4 al 7, confirmados el 30 de agosto de 2026.**
+Los números 1 y 2 eran de los dos formularios de ejemplo que instala el propio
+plugin, y el 3 quedó ocupado al reimportar uno de ellos. Fluent Forms no
+reutiliza identificadores borrados, así que si algún día se rehace un
+formulario habrá que actualizar su shortcode en `elementor/contacto.json` y en
+`forestal-leon/patterns/formularios-ficha-proyecto.php`.
 
 ---
 

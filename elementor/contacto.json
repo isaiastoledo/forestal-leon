@@ -463,7 +463,7 @@
            "widgetType": "shortcode",
            "elements": [],
            "settings": {
-            "shortcode": "[fluentform id=\"1\"]",
+            "shortcode": "[fluentform id=\"4\"]",
             "_title": "Formulario — Compra de productos"
            }
           }
@@ -789,7 +789,7 @@
            "widgetType": "shortcode",
            "elements": [],
            "settings": {
-            "shortcode": "[fluentform id=\"2\"]",
+            "shortcode": "[fluentform id=\"5\"]",
             "_title": "Formulario — Construcción e ingeniería"
            }
           }
@@ -1113,7 +1113,7 @@
            "widgetType": "shortcode",
            "elements": [],
            "settings": {
-            "shortcode": "[fluentform id=\"3\"]",
+            "shortcode": "[fluentform id=\"6\"]",
             "_title": "Formulario — Reclamos y MPD"
            }
           }
@@ -1439,7 +1439,7 @@
            "widgetType": "shortcode",
            "elements": [],
            "settings": {
-            "shortcode": "[fluentform id=\"4\"]",
+            "shortcode": "[fluentform id=\"7\"]",
             "_title": "Formulario — Contacto general"
            }
           }
