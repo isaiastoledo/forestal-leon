@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.21.0
+Version: 2.21.1
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -892,13 +892,22 @@ html:not( .fl-js ) .fl-hero-superpuesto .fl-cabecera .wp-block-site-title a {
 
    Se usa la misma técnica que arriba —restar el margen lateral— y no «100vw»:
    con vw la barra de desplazamiento cuenta como ancho y aparece un
-   desplazamiento horizontal de unos pocos píxeles. */
+   desplazamiento horizontal de unos pocos píxeles.
+
+   Lleva «!important» porque la maquetación de WordPress escribe
+   «margin-left: auto !important» sobre todo lo que va dentro de un contenedor
+   restringido, y sin él esta regla no llega a aplicarse nunca. Comprobado el
+   30 de agosto de 2026: el margen calculado salía 0.
+
+   Esto ensancha la galería hasta el contenedor, no hasta el borde de la
+   pantalla. Llegar al borde exigiría sacar el collage de la columna de
+   lectura, que vive en single-proyecto.html, y eso está sin decidir. */
 .single-proyecto .wp-block-post-content .foogallery,
 .single-proyecto .wp-block-post-content p:has( > .foogallery ) {
-	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) );
-	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) );
-	max-width: none;
-	width: auto;
+	margin-left: calc( -1 * var( --wp--custom--contenedor--padding ) ) !important;
+	margin-right: calc( -1 * var( --wp--custom--contenedor--padding ) ) !important;
+	max-width: none !important;
+	width: auto !important;
 }
 
 /* El hero no lleva texto: que la imagen ocupe todo sin recuadrar. */
