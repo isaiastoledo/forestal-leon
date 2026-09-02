@@ -4,7 +4,7 @@ Theme URI: https://forestalleon.cl
 Author: ALTURA
 Author URI: https://forestalleon.cl
 Description: Tema de bloques (Full Site Editing) para Forestal León — Coelemu, Región de Ñuble. Estructura sobria de arquitectura en madera: retícula amplia, tipografía condensada, esquinas rectas y cero adornos. Paleta corporativa completa (verdes de bosque, acentos de madera y neutros cálidos) definida en theme.json y editable desde Apariencia › Editor › Estilos.
-Version: 2.22.2
+Version: 2.23.0
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -49,6 +49,27 @@ Tags: full-site-editing, block-patterns, editor-style, wide-blocks, custom-color
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+}
+
+/* El hero pasa a usar un MP4 propio en lugar de una incrustación de YouTube.
+
+   Con un vídeo nativo el recorte se resuelve con «object-fit: cover», que es
+   exacto: el vídeo llena la caja y se recorta lo que sobra, sin las cuentas de
+   sobredimensionado que hacen falta con un iframe.
+
+   El motivo del cambio fue la nitidez. YouTube decide la calidad por su cuenta
+   y en reproducciones automáticas y silenciadas sirve bajo; a 2079 px de ancho
+   la ampliación se notaba. Un archivo propio se reproduce a su resolución real.
+   Medido el 2 de septiembre de 2026 sobre binderholz, que hace lo mismo: MP4
+   propio de 1920x1080, sin ampliar. */
+.elementor .fl-hero-video__video {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
