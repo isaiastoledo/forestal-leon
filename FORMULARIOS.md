@@ -23,24 +23,52 @@ formato y con muchas papeletas de acabar en la carpeta de spam.
 
 ## 2 · Configurar el envío (FluentSMTP)
 
+El correo de `forestalleon.cl` lo gestiona **Google Workspace**, no Hostinger.
+Comprobado el 30 de agosto de 2026: los registros MX del dominio apuntan a
+`aspmx.l.google.com`. Cualquier configuración contra `smtp.hostinger.com` no
+funciona, aunque el sitio esté alojado allí.
+
 **Ajustes › FluentSMTP › Añadir conexión**
 
 | Campo | Valor |
 |---|---|
-| Correo remitente | `web@forestalleon.cl` |
-| Nombre remitente | Forestal León |
-| Proveedor | Otro SMTP |
-| Servidor | `smtp.hostinger.com` |
-| Puerto | 465 (SSL) |
-| Usuario | `web@forestalleon.cl` |
-| Contraseña | la de esa cuenta |
+| From Email | `contacto@forestalleon.cl` |
+| Force From Email | Sí |
+| From Name | Forestal León |
+| Proveedor | Other SMTP |
+| SMTP Host | `smtp.gmail.com` |
+| Port | 587 |
+| Encryption | TLS |
+| Auto TLS | Activado |
+| Authentication | Activado |
+| Username | `contacto@forestalleon.cl` |
+| Password | **contraseña de aplicación**, no la del correo |
 
-Marcar **Forzar el remitente**, para que ningún plugin lo cambie por su cuenta.
+### La contraseña de aplicación
 
-Al terminar, usar **Enviar correo de prueba** antes de seguir.
+No es la contraseña del buzón, sino un código de 16 letras que se genera en
+`myaccount.google.com/apppasswords`. Requiere tener activada la verificación en
+dos pasos en esa cuenta. Solo sirve para enviar correo y se puede anular en
+cualquier momento sin tocar la contraseña real.
 
-> La cuenta se crea en el panel de Hostinger, en Correos. Si el volumen crece,
-> Brevo da 300 correos al día gratis y mejor entregabilidad.
+> **Ojo con las cuentas sin estrenar.** Un buzón de Workspace que nunca se ha
+> usado pide definir contraseña en el primer acceso. Si es del cliente, ese paso
+> lo tiene que dar él: cambiarla por tu cuenta le deja fuera de su propio correo.
+> Pasó el 8 de septiembre de 2026 con tres de los cuatro buzones.
+
+### Sobre el remitente
+
+Los cuatro formularios salen desde `contacto@forestalleon.cl`, porque es la
+cuenta que autentica el envío, pero **cada uno sigue llegando a su destino**.
+Como la notificación pone la dirección del visitante en «responder a», al
+pulsar Responder se contesta directamente a quien escribió.
+
+Si algún día se quiere que cada formulario salga desde su propia dirección, son
+cuatro conexiones en FluentSMTP con cuatro contraseñas de aplicación.
+
+> Si el volumen crece o hay un administrador de Workspace de por medio, la vía
+> ordenada es la **retransmisión SMTP** de Google: se configura una vez para
+> toda la organización y no reparte contraseñas por usuario.
 
 ---
 
