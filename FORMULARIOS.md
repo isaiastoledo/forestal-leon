@@ -56,6 +56,30 @@ cualquier momento sin tocar la contraseña real.
 > lo tiene que dar él: cambiarla por tu cuenta le deja fuera de su propio correo.
 > Pasó el 8 de septiembre de 2026 con tres de los cuatro buzones.
 
+### Estado de la conexión
+
+**Configurada el 10 de septiembre de 2026** con `contacto@forestalleon.cl`. Las
+claves no se guardan en este repositorio, que es público: están en poder del
+cliente y de quien administra la web.
+
+Las contraseñas de aplicación **no caducan**, pero Google las anula en cuatro
+casos:
+
+- **si se cambia la contraseña principal del buzón** — el caso realista;
+- si se desactiva la verificación en dos pasos;
+- si alguien la revoca a mano en `myaccount.google.com/apppasswords`;
+- si Google detecta actividad sospechosa en la cuenta.
+
+En cualquiera de ellos **los formularios dejan de enviar sin avisar**: los
+mensajes se siguen guardando en Fluent Forms › Entries, pero no llega el correo.
+Si el cliente cambia la contraseña de `contacto@`, hay que generar una clave de
+aplicación nueva y ponerla en FluentSMTP.
+
+> Las claves que el cliente pasó para `ventas@` y `reclamos@` son idénticas y
+> tienen 14 caracteres en lugar de 16: un error al copiarlas. No se usan —basta
+> una conexión—, pero si algún día cada formulario ha de salir desde su propio
+> buzón, habrá que regenerarlas.
+
 ### Sobre el remitente
 
 Los cuatro formularios salen desde `contacto@forestalleon.cl`, porque es la
