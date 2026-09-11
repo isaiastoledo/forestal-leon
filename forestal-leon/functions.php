@@ -269,8 +269,18 @@ function forestal_leon_sembrar_taxonomias() {
 	 * Para volver a sembrar a propósito (sitio nuevo, o tras vaciar todo), borra
 	 * la opción «forestal_leon_contenido_creado» y reactiva el tema.
 	 */
-	if ( get_option( 'forestal_leon_contenido_creado' ) === FORESTAL_LEON_VERSION ) {
-		// Ya se sembró con esta versión: solo refrescamos las reglas de las URL.
+	/*
+	 * Se comprueba que la marca EXISTA, no que coincida con la versión.
+	 *
+	 * Hasta la 2.23.0 se comparaba con FORESTAL_LEON_VERSION, y eso contradecía
+	 * el propio comentario de arriba: cada versión nueva dejaba de coincidir y
+	 * volvía a sembrarlo todo. El 10 de septiembre de 2026 había 54 productos
+	 * —los 9 repetidos seis veces, uno por cada tanda— y tres fichas del galpón.
+	 * El valor guardado sigue siendo la versión en que se sembró, pero solo como
+	 * dato informativo: ya no decide nada.
+	 */
+	if ( get_option( 'forestal_leon_contenido_creado' ) ) {
+		// Ya se sembró: solo refrescamos las reglas de las URL.
 		forestal_leon_tipos_de_contenido();
 		flush_rewrite_rules();
 		return;
@@ -351,7 +361,7 @@ function forestal_leon_sembrar_si_falta() {
 		return;
 	}
 
-	if ( get_option( 'forestal_leon_contenido_creado' ) === FORESTAL_LEON_VERSION ) {
+	if ( get_option( 'forestal_leon_contenido_creado' ) ) {
 		return;
 	}
 
